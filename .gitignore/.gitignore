@@ -4,3 +4,4 @@ app/
 package.json
 gulpfile.js
 dev.zip
+*.psd
