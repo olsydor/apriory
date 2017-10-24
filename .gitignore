@@ -1,7 +1,7 @@
 node_modules/
-app/
 .gitignore
 package.json
 gulpfile.js
 dev.zip
 *.psd
+app/
