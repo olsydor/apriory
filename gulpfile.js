@@ -48,4 +48,4 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('default', ['html', 'scss', 'webserver']);
+gulp.task('default', ['html', 'scss', 'images','webserver']);
