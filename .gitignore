@@ -5,3 +5,4 @@ gulpfile.js
 dev.zip
 *.psd
 app/
+app/*
