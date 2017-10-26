@@ -1,7 +1,17 @@
 node_modules/
+<<<<<<< HEAD
 package.json
 gulpfile.js
 dev.zip
 *.psd
 app/
 
+=======
+app/
+app/*
+.gitignore
+package.json
+gulpfile.js
+dev.zip
+*.psd
+>>>>>>> b815e234d04335b87efa8efab14ac692f76132ac
