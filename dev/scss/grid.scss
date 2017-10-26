@@ -21,6 +21,11 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+.wrapper{
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 960px;
+}
 .clearfix{
 	&:after{
 		content: '';
@@ -50,16 +55,19 @@
 	max-width: 695px;
 	
 }
+[class*='col-']{
+	padding: 0 10px;
+}
 .col-{
 	border: 2px solid red;
 	&phablet-{
 		@include breakpoint(phablet){
+			
 			&1-2{
 				width: 50%;
-				background: green;
 				float: left;
-				&.empty{
-					height: 1px;					
+				&.map1{
+					width: 40%;					
 				}
 			}
 			&1-3{
