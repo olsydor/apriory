@@ -5,3 +5,4 @@ package.json
 gulpfile.js
 dev.zip
 *.psd
+package-lock.json
