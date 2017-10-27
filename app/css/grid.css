@@ -3,6 +3,11 @@
   box-sizing: border-box;
   margin: 0; }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 960px; }
+
 .clearfix:after {
   content: '';
   clear: both;
@@ -28,15 +33,17 @@
   width: 100%;
   max-width: 695px; }
 
+[class*='col-'] {
+  padding: 0 10px; }
+
 .col- {
   border: 2px solid red; }
   @media (min-width: 37.5em) {
     .col-phablet-1-2 {
       width: 50%;
-      background: green;
       float: left; }
-      .col-phablet-1-2.empty {
-        height: 1px; }
+      .col-phablet-1-2.map1 {
+        width: 40%; }
     .col-phablet-1-3 {
       width: 33.33%;
       background: green;
