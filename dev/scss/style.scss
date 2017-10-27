@@ -1,3 +1,21 @@
+@font-face {
+	font-family: 'Sansation-Regular';
+	src: url('../fonts/Sansation-Regular.eot');
+	src: url('../fonts/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Regular.woff') format('woff'),
+		url('../fonts/Sansation-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sansation-Bold';
+	src: url('../fonts/Sansation-Bold.eot');
+	src: url('../fonts/Sansation-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Bold.woff') format('woff'),
+		url('../fonts/Sansation-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -16,7 +34,7 @@
 	height: 21px;
 }
 .icon_vk{
-	background-position: -23px -3px;
+	background-position: -19px -3px;
 	width: 17px;
 	height: 21px;
 }
@@ -25,55 +43,55 @@
 	width: 10px;
 	height: 23px;
 }
-.icon_house{
+.icon_designing{
 	background-position: -48px -3px;
 	width: 70px;
 	height: 61px;
 
 }
-.icon_zoom{
+.icon_investigation {
 	background-position: -121px -3px;
 	width: 56px;
 	height: 56px;
 
 }
-.icon_radiator{
+.icon_thermal {
 	background-position:  -179px -3px;
 	width: 58px;
 	height: 60px;
 }
-.icon_palitra{
+.icon_design {
 	background-position:  -241px -3px;
 	width: 63px;
 	height: 60px;
 }
-.icon_solarbat{
+.icon_solar {
 	background-position:-308px -3px;
 	width: 63px;
 	height: 62px;
 }
-.icon_buildcar{
+.icon_construction {
 	background-position: -374px -3px;
 	width: 80px;
 	height: 72px;
 
 }
-.icon_p{
+.icon_price {
 	background-position: -461px -3px;
 	width: 23px;
 	height: 32px;
 }
-.icon_pictext{
+.icon_articles{
 	background-position:  -490px -3px;
 	width: 34px;
 	height: 26px;
 }
-.icon_envelope{
+.icon_order{
 	background-position: -530px -3px;
 	width: 37px;
 	height: 27px;
 }
-.icon_people{
+.icon_reviews{
 	background-position: -573px -3px;
 	width: 50px;
 	height: 41px;
@@ -88,3 +106,10 @@
 	width: 60px;
 	height: 97px;
 }
+.section{
+	padding:50px 0 50px 0;
+}
+.section_grey{
+	padding:30px 0 30px 0;
+	background-color: #ededed;
+}	
