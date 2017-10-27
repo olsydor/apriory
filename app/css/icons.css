@@ -8,7 +8,11 @@
 
 .icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
 .icon_order, .icon_reviews, .icon_check, .icon_marker {
+<<<<<<< HEAD
   background: url("/images/spriteico.png") no-repeat; }
+=======
+  background: url("../images/spriteico.png") no-repeat; }
+>>>>>>> e9a60f03f6de851819757062d68746ebaca775a1
 
 .icon_fb {
   background-position: -3px -3px;

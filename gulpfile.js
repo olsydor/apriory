@@ -51,4 +51,8 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('default', ['html', 'scss', 'webserver']);
+<<<<<<< HEAD
+gulp.task('default', ['html', 'scss', 'images','webserver']);
+=======
+gulp.task('default', ['html', 'scss', 'images', 'webserver']);
+>>>>>>> d4b6378ead92fb637e55cc2c80e19aae0d1e4fd8

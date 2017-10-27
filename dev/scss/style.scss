@@ -1,3 +1,21 @@
+@font-face {
+	font-family: 'Sansation-Regular';
+	src: url('../fonts/Sansation-Regular.eot');
+	src: url('../fonts/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Regular.woff') format('woff'),
+		url('../fonts/Sansation-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sansation-Bold';
+	src: url('../fonts/Sansation-Bold.eot');
+	src: url('../fonts/Sansation-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Bold.woff') format('woff'),
+		url('../fonts/Sansation-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -88,3 +106,24 @@
 	width: 60px;
 	height: 97px;
 }
+<<<<<<< HEAD
+.phones{
+	font-size: 26px;
+	span:first-child{
+		font-size:17px;
+		color:#707070;
+	}
+}	
+.adress{
+	font-size:17px;
+	color:#707070;
+}
+=======
+.section{
+	padding:50px 0 50px 0;
+}
+.section_grey{
+	padding:30px 0 30px 0;
+	background-color: #ededed;
+}	
+>>>>>>> d4b6378ead92fb637e55cc2c80e19aae0d1e4fd8
