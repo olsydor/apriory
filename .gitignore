@@ -1,8 +1,0 @@
-node_modules/
-app/
-app/*
-.gitignore
-package.json
-gulpfile.js
-dev.zip
-*.psd
