@@ -113,14 +113,17 @@
 	color:#707070;
 	font-family: 'Sansation-Bold';
 }
-.advantages-num{
+.advantages-wrap{
 	display:inline-block;
+}
+.advantages-num{
 	color:#4b9bf0;
 	font-size:78px;
 }
 .advantages{
-	display: inline-block;
+	display:inline-block;
 	color:black;
+	text-transform: uppercase;
 	font-size:26px;
 	font-style: bold;
 }

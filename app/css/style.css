@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Sansation-Regular';
+  src: url("../fonts/Sansation-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sansation-Bold';
+  src: url("../fonts/Sansation-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+* {
+  font-family: 'Sansation-Bold';
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
+.icon_order, .icon_reviews, .icon_check, .icon_marker {
+  background: url("/images/spriteico.png") no-repeat; }
+
+.icon_fb {
+  background-position: -3px -3px;
+  width: 14px;
+  height: 21px; }
+
+.icon_vk {
+  background-position: -19px -3px;
+  width: 17px;
+  height: 21px; }
+
+.icon_tw {
+  background-position: -11px -29px;
+  width: 10px;
+  height: 23px; }
+
+.icon_designing {
+  background-position: -48px -3px;
+  width: 70px;
+  height: 61px; }
+
+.icon_investigation {
+  background-position: -121px -3px;
+  width: 56px;
+  height: 56px; }
+
+.icon_thermal {
+  background-position: -179px -3px;
+  width: 58px;
+  height: 60px; }
+
+.icon_design {
+  background-position: -241px -3px;
+  width: 63px;
+  height: 60px; }
+
+.icon_solar {
+  background-position: -308px -3px;
+  width: 63px;
+  height: 62px; }
+
+.icon_construction {
+  background-position: -374px -3px;
+  width: 80px;
+  height: 72px; }
+
+.icon_price {
+  background-position: -461px -3px;
+  width: 23px;
+  height: 32px; }
+
+.icon_articles {
+  background-position: -490px -3px;
+  width: 34px;
+  height: 26px; }
+
+.icon_order {
+  background-position: -530px -3px;
+  width: 37px;
+  height: 27px; }
+
+.icon_reviews {
+  background-position: -573px -3px;
+  width: 50px;
+  height: 41px; }
+
+.icon_check {
+  background-position: -629px -4px;
+  width: 59px;
+  height: 59px; }
+
+.icon_marker {
+  background-position: -692px -4px;
+  width: 60px;
+  height: 97px; }
+
+.phones {
+  font-size: 26px; }
+  .phones span:first-child {
+    font-size: 17px;
+    color: #707070; }
+
+.adress {
+  font-size: 17px;
+  color: #707070;
+  font-family: 'Sansation-Bold'; }
+
+.advantages-wrap {
+  display: inline-block; }
+
+.advantages-num {
+  color: #4b9bf0;
+  font-size: 78px; }
+
+.advantages {
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-style: bold; }
+
+.years {
+  display: inline-block;
+  position: relative; }
+  .years span:first-child {
+    font-size: 112px;
+    color: #f52556; }
+  .years span:nth-child(2) {
+    position: absolute;
+    top: 61%;
+    right: -30%; }
+
+.section {
+  padding: 50px 0 50px 0; }
+
+.section_grey {
+  padding: 30px 0 30px 0;
+  background-color: #ededed; }
