@@ -67,9 +67,7 @@
 	
 }
 @include breakpoint (mobileonly){
-	.wrapper{
-		padding: 0;
-	}
+	
 	[class*="col-"]{
 		padding: 0;
 	}
