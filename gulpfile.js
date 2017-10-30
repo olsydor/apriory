@@ -29,7 +29,6 @@ gulp.task('html', function(){
   	.pipe(pug({
     	"pretty": true
   }))
-  .pipe(gulp.dest('./app/'));
   .pipe(gulp.dest('./app/'))
   gulp.src('./dev/js/*.js')
 	  .pipe(watch ('./dev/js/*.js'))
