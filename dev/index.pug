@@ -4,16 +4,17 @@ html
 		include ./parts/head.pug
 	body
 		.wrapper
-			.section.header
-			img(src="images/apriory_logo.jpg")
-			a.phones(href="tel:3512235317")
-				span (351) 
-				span 223-53-17
-			a.phones(href="tel:3512235316")
-				span (351)
-				span 223-53-16	
-			span.adress г. Челябинск,ул. 
-				|Российская 224
+			.header
+				.header_contacts.put-right
+					a.phones(href="tel:3512235317")
+						span (351) 
+						span 223-53-17
+					a.phones(href="tel:3512235316")
+						span (351)
+						span 223-53-16	
+					span.adress г. Челябинск,ул. 
+						|Российская 224
+				img(src="images/apriory_logo.jpg")
 		.mainpicture
 		.wrapper
 			.row.clearfix
@@ -26,9 +27,9 @@ html
 								span.advantages-title
 									|проектов за 
 							.years
-									span 7 
-									span.advantages-title
-										|лет!
+								span 7 
+								span.advantages-title
+									|лет!
 						.advantages-text
 							span Более 1000 проектов за 7 лет по всей России и СНГ
 				.col-phablet-1-2.col-tablet-1-3 

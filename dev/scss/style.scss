@@ -1,3 +1,21 @@
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}
 @font-face {
 	font-family: 'Sansation-Regular';
 		src:url('../fonts/Sansation-Regular.ttf') format('truetype');
@@ -104,17 +122,46 @@
 	width: 60px;
 	height: 97px;
 }
-.phones{
-	font-size: 26px;
-	span:first-child{
-		font-size:17px;
-		color:#707070;
+// start header top line
+.header{
+	text-align: center;
+	padding: 20px 0;
+	img{
+		margin-top: 20px;
 	}
-}	
-.adress{
-	font-size:17px;
-	color:#707070;
+	.header_contacts{
+		
+		.phones{
+			font-size: 26px;
+			span:first-child{
+				font-size:17px;
+				color:#707070;
+			}
+		}	
+		.adress{
+			font-size:17px;
+			color:#707070;
+		}
+	}
 }
+@media (min-width:800px){
+	.put-right{
+		float:right;
+		display: inline-block;
+		
+	}
+	.header{
+		img{
+			margin-top: 0;
+		}
+		.phones{
+			padding: 0 25px 0 0;
+		}
+	}
+}
+// End header top line
+
+
 .advantages-title-num{
 	display:block;
 	color:#4b9bf0;
