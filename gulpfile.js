@@ -29,6 +29,7 @@ gulp.task('html', function(){
   	.pipe(pug({
     	"pretty": true
   }))
+  .pipe(gulp.dest('./app/'));
   .pipe(gulp.dest('./app/'))
   gulp.src('./dev/js/*.js')
 	  .pipe(watch ('./dev/js/*.js'))
@@ -39,7 +40,6 @@ gulp.task('scss', function() {
 	gulp.src('./dev/scss/*.scss')
 	.pipe(watch('./dev/scss/*.scss'))
 		.pipe(scss())
-		//.pipe(cleancss)
 		.pipe(gulp.dest('./app/css/'));
 
 });
@@ -49,5 +49,10 @@ gulp.task('images', function() {
     .pipe(watch('./dev/images/*'))
     .pipe(gulp.dest('./app/images/'))
 });
-gulp.task('default', ['html', 'scss', 'images', 'webserver']);
+gulp.task('fonts', function() {
+    gulp.src('./dev/fonts/*')
+    .pipe(watch('./dev/fonts/*'))
+    .pipe(gulp.dest('./app/fonts/'))
+});
+gulp.task('default', ['html', 'scss', 'images','webserver','fonts']);
 

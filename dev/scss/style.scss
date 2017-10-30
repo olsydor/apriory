@@ -1,22 +1,17 @@
 @font-face {
 	font-family: 'Sansation-Regular';
-	src: url('../fonts/Sansation-Regular.eot');
-	src: url('../fonts/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Sansation-Regular.woff') format('woff'),
-		url('../fonts/Sansation-Regular.ttf') format('truetype');
+		src:url('../fonts/Sansation-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Sansation-Bold';
-	src: url('../fonts/Sansation-Bold.eot');
-	src: url('../fonts/Sansation-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Sansation-Bold.woff') format('woff'),
-		url('../fonts/Sansation-Bold.ttf') format('truetype');
+	src: url('../fonts/Sansation-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 *{
+	font-family: 'Sansation';
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,6 +19,9 @@
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
  	}
+ img{
+ 	max-width: 100%;
+ }
 .icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
 .icon_order, .icon_reviews, .icon_check, .icon_marker{
     background: url('/images/spriteico.png') no-repeat;
@@ -117,6 +115,46 @@
 	font-size:17px;
 	color:#707070;
 }
+.advantages-title-num{
+	display:block;
+	color:#4b9bf0;
+	font-size:78px;
+	font-family:'Sansation-Bold';
+}
+.advantages-title{
+	display:inline-block;
+	color:black;
+	text-transform: uppercase;
+	font-size:26px;
+	line-height: 1.7em;
+	font-family:'Sansation-Bold';
+}
+.advanatges-cpo{
+	font-size:72px;
+	color:#4b9bf0;
+	text-transform: uppercase;
+	font-family:'Sansation-Bold';
+}
+.advantages-customer{
+	font-size: 58px;
+	color:#4b9bf0;
+	font-family:'Sansation-Bold';
+}
+.years{
+	font-family:'Sansation-Bold';
+	display:inline-block;
+	position:relative;
+	span:first-child{
+		font-size:112px;
+		color:#f52556;
+		
+	}
+	span:nth-child(2){
+		position:absolute;
+		top:55%;
+		right:-45%; 
+	}
+}
 .section{
 	padding:50px 0 50px 0;
 }
@@ -124,4 +162,24 @@
 	padding:30px 0 30px 0;
 	background-color: #ededed;
 }	
-
+.advantages{
+	height:130px;
+	vertical-align: bottom;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #929292;
+}
+.advantages_cpo{
+padding-top: 36px;
+}
+.advantages-text{
+	padding-top:10px;
+	color:#929292;
+	font-size:18px;
+	font-style:none;
+}
+.mainpicture{
+	height:675px;
+	background-image:url(../images/header_picture.jpg);
+	background-size:contain;
+	background-repeat: no-repeat;
+}
