@@ -1,2 +1,0 @@
-# apriory
-Apriori landind page

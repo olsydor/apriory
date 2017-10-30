@@ -2,7 +2,6 @@ node_modules/
 .gitignore
 package.json
 gulpfile.js
-dev.zip
 *.psd
 app/
 app/*
