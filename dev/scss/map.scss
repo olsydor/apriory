@@ -66,6 +66,12 @@
 	
 	
 }
+@include breakpoint (mobileonly){
+	
+	[class*="col-"]{
+		padding: 0;
+	}
+}
 @include breakpoint(phablet){
 	.contacts{
 		display: inline-block;
@@ -75,6 +81,7 @@
 	.col-phablet-1-2.map{
 		position: relative;
 		margin-top: -570px;
+		padding: 0;
 	}
 	#map{
 		height: 750px;
