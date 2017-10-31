@@ -41,7 +41,7 @@
       <html>
         <head></head>
         <body>
-          <p>Тип вашего обьекта</p>
+          <pool_title>Тип вашего обьекта</pool_title>
           <form>
             <label class="checkbox-inline">
               <input type="checkbox" value="">Жылой дом
@@ -53,10 +53,10 @@
               <input type="checkbox" value="">Сооружение
             </label>
           </form>
-          <p>Параметры</p>
+          <pool_title>Параметры</pool_title>
           <form>
             <label class="checkbox-inline">
-              <input type="number" autofocus maxlength="4" name="">Площадь
+              <input type="number" name="">Площадь
             </label>
             <label class="checkbox-inline">
               <input type="number" autofocus maxlength="2" name="">Етаж
@@ -65,7 +65,7 @@
               <input type="number" autofocus maxlength="2" name="">Высота этажа
             </label>
           </form>
-          <p>Параметры проектирования</p>
+          <pool_title>Параметры проектирования</pool_title>
           <form>
             <label class="checkbox-inline">
               <input type="checkbox" value="">Новое строительство
@@ -77,7 +77,7 @@
               <input type="text" autofocus maxlength="20" value="">Иное
             </label>
           </form>
-          <p>Состав проектирования</p>
+          <pool_title>Состав проектирования</pool_title>
           <form>
             <label class="checkbox-inline">
               <input type="number" autofocus maxlength="20" value="">Этаж 
@@ -86,11 +86,15 @@
               <input type="number" value="">АР.
             </label>
           </form>
-          <p>Иные требования:</p>
+          <pool_title>Иные требования:</pool_title>
           <form>
             <label class="checkbox-inline">
               <input type="text" autofocus maxlength="140" value="">
             </label>
+          </form>
+          <form>
+            <input type="text" placeholder="Имя..." autofocus maxlength="20">
+            <input type="tel" pattern="(ddd) ?ddd-dd-dd" placeholder="Телефон..."><a class="btn btn-application" href=""> оставить заявку</a>
           </form>
         </body>
       </html>

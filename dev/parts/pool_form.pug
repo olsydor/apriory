@@ -2,7 +2,7 @@ doctype
 html
 	head
 	body
-		pool-title Тип вашего обьекта
+		pool_title Тип вашего обьекта
 		form
 			label(class="checkbox-inline")
 				input(type="checkbox" value="")
@@ -13,10 +13,10 @@ html
 			label(class="checkbox-inline")
 				input(type="checkbox" value="")
 				| Сооружение
-		pool-title Параметры
+		pool_title Параметры
 		form
 			label(class="checkbox-inline")
-				input(type="number" autofocus maxlength="4" name="")
+				input(type="number"  name="")
 				|Площадь
 			label(class="checkbox-inline")
 				input(type="number" autofocus maxlength="2" name="")
@@ -24,7 +24,7 @@ html
 			label(class="checkbox-inline")
 				input(type="number" autofocus maxlength="2" name="")
 				|Высота этажа
-		pool-title Параметры проектирования
+		pool_title Параметры проектирования
 		form
 			label(class="checkbox-inline")
 				input(type="checkbox" value="")
@@ -35,7 +35,7 @@ html
 			label(class="checkbox-inline")
 				input(type="text" autofocus maxlength="20" value="")
 				|Иное
-		pool-title Состав проектирования
+		pool_title Состав проектирования
 		form
 			label(class="checkbox-inline")
 				input(type="number" autofocus maxlength="20" value="")
@@ -43,9 +43,11 @@ html
 			label(class="checkbox-inline")
 				input(type="number" value="")
 				| АР.
-		pool-title Иные требования:
+		pool_title Иные требования:
 		form
 			label(class="checkbox-inline")
 				input(type="text" autofocus maxlength="140" value="")
-
-
+		form
+			input(type="text" placeholder="Имя..." autofocus maxlength="20")
+			input(type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d" placeholder="Телефон...")
+			a.btn.btn-application(href="") оставить заявку

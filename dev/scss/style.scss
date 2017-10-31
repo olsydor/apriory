@@ -138,6 +138,16 @@
   margin-right: 45px;
   color: #c0c0c0;
 }
+.pool_title{
+
+}
+.checkbox input:before {
+  content: '';
+  background: #fff;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
 ::-webkit-input-placeholder { /* Chrome */
   color: #c0c0c0;
 }
