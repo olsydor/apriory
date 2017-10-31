@@ -50,9 +50,4 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./app/images/'))
 });
 
-
-<<<<<<< HEAD
-gulp.task('default', ['html', 'scss', 'images','webserver']);
-=======
 gulp.task('default', ['html', 'scss', 'images', 'webserver']);
->>>>>>> d4b6378ead92fb637e55cc2c80e19aae0d1e4fd8
