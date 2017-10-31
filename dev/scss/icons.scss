@@ -6,82 +6,85 @@
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
  	}
-.icon {
+.icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
+.icon_order, .icon_reviews, .icon_check, .icon_marker{
     background: url('/images/spriteico.png') no-repeat;
-    display: inline-block;
 }
 .icon_fb{
-	background-position: -26px -30px;
+	background-position: -3px -3px;
 	width: 14px;
 	height: 21px;
 }
 .icon_vk{
-	background-position: -76px -30px;
+	background-position: -23px -3px;
 	width: 17px;
 	height: 21px;
 }
 .icon_tw {
-	background-position: -135px -29px;
+	background-position: -11px -29px;
 	width: 10px;
 	height: 23px;
 }
 .icon_house{
-	background-position: -184px -31px;
+	background-position: -48px -3px;
 	width: 70px;
 	height: 61px;
+
 }
 .icon_zoom{
-	background-position: -299px -31px;
+	background-position: -121px -3px;
 	width: 56px;
 	height: 56px;
+
 }
 .icon_radiator{
-	background-position:  -393px -31px;
+	background-position:  -179px -3px;
 	width: 58px;
 	height: 60px;
 }
 .icon_palitra{
-	background-position:  -485px -31px;
+	background-position:  -241px -3px;
 	width: 63px;
 	height: 60px;
 }
 .icon_solarbat{
-	background-position: -591px -33px;
+	background-position:-308px -3px;
 	width: 63px;
 	height: 62px;
 }
 .icon_buildcar{
-	background-position: -698px -33px;
+	background-position: -374px -3px;
 	width: 80px;
 	height: 72px;
+
 }
 .icon_p{
-	background-position: -891px -34px;
+	background-position: -461px -3px;
 	width: 23px;
 	height: 32px;
 }
 .icon_pictext{
-	background-position:  -971px -34px;
+	background-position:  -490px -3px;
 	width: 34px;
 	height: 26px;
 }
 .icon_envelope{
-	background-position: -971px -34px;
+	background-position: -530px -3px;
 	width: 37px;
 	height: 27px;
 }
 .icon_people{
-	background-position: -1044px -32px;
+	background-position: -573px -3px;
 	width: 50px;
 	height: 41px;
 }
 .icon_check{
-	background-position: -1129px -34px;
+	background-position: -629px -4px;
 	width: 59px;
 	height: 59px;
 }
 .icon_marker {
-	background-position:  -1228px -34px;
+	background-position:  -692px -4px;
 	width: 60px;
 	height: 97px;
 }
