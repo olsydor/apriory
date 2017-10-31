@@ -1,4 +1,3 @@
-
 @font-face {
 	font-family: 'Sansation-Regular';
 	src: url('../fonts/Sansation-Regular.eot');
@@ -17,82 +16,93 @@
 	font-weight: bold;
 	font-style: normal;
 }
-.icon {
-	background: url('/images/spriteico.png') no-repeat;
-	display: inline-block;
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+ 	}
+.icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
+.icon_order, .icon_reviews, .icon_check, .icon_marker{
+    background: url('/images/spriteico.png') no-repeat;
 }
 .icon_fb{
-	background-position: -26px -30px;
+	background-position: -3px -3px;
 	width: 14px;
 	height: 21px;
 }
 .icon_vk{
-	background-position: -76px -30px;
+	background-position: -19px -3px;
 	width: 17px;
 	height: 21px;
 }
 .icon_tw {
-	background-position: -135px -29px;
+	background-position: -11px -29px;
 	width: 10px;
 	height: 23px;
 }
-.icon_house{
-	background-position: -184px -31px;
+.icon_designing{
+	background-position: -48px -3px;
 	width: 70px;
 	height: 61px;
+
 }
-.icon_zoom{
-	background-position: -299px -31px;
+.icon_investigation {
+	background-position: -121px -3px;
 	width: 56px;
 	height: 56px;
+
 }
-.icon_radiator{
-	background-position:  -393px -31px;
+.icon_thermal {
+	background-position:  -179px -3px;
 	width: 58px;
 	height: 60px;
 }
-.icon_palitra{
-	background-position:  -485px -31px;
+.icon_design {
+	background-position:  -241px -3px;
 	width: 63px;
 	height: 60px;
 }
-.icon_solarbat{
-	background-position: -591px -33px;
+.icon_solar {
+	background-position:-308px -3px;
 	width: 63px;
 	height: 62px;
 }
-.icon_buildcar{
-	background-position: -698px -33px;
+.icon_construction {
+	background-position: -374px -3px;
 	width: 80px;
 	height: 72px;
+
 }
-.icon_p{
-	background-position: -891px -34px;
+.icon_price {
+	background-position: -461px -3px;
 	width: 23px;
 	height: 32px;
 }
-.icon_pictext{
-	background-position:  -971px -34px;
+.icon_articles{
+	background-position:  -490px -3px;
 	width: 34px;
 	height: 26px;
 }
-.icon_envelope{
-	background-position: -971px -34px;
+.icon_order{
+	background-position: -530px -3px;
 	width: 37px;
 	height: 27px;
 }
-.icon_people{
-	background-position: -1044px -32px;
+.icon_reviews{
+	background-position: -573px -3px;
 	width: 50px;
 	height: 41px;
 }
 .icon_check{
-	background-position: -1129px -34px;
+	background-position: -629px -4px;
 	width: 59px;
 	height: 59px;
 }
 .icon_marker {
-	background-position:  -1228px -34px;
+	background-position:  -692px -4px;
 	width: 60px;
 	height: 97px;
 }
@@ -113,65 +123,13 @@
 .section_grey{
 	padding:30px 0 30px 0;
 	background-color: #ededed;
-}
+}	
 .title{
  text-align:center;
   text-transform:uppercase;
   font-size:41px;
   font-weight:bold;
   span{
-	color:red;
+    color:red;
   }
-
-
-body{
-  font-family: 'sansationregular';
-}
-
-.btn{
-  font-family: "MyriadProRegular";
-	height: 70px;
-	width: 280px;
-	font-size: 31px;
-	display: inline-block;
-	text-transform: uppercase;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	line-height: 70px;
-}
-.btn-services{
-	background: #4b9bf0;
-}
-
-.btn-portfolio{
-	background: #f52556;
-}
-
-.btn-application{
-	background: #76c327;
-	font-size: 24px;
-}
-
-input{
-  width: 287px;
-  height: 50px;
-  font-size: 22px;
-  padding-left: 18px;
-  margin-right: 45px;
-  color: #c0c0c0;
-}
-
-::-webkit-input-placeholder { /* Chrome */
-  color: #c0c0c0;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #c0c0c0;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #c0c0c0;
-  opacity: 1;
-}
-:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #c0c0c0;
-  opacity: 1;}
+}	
