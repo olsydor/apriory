@@ -18,8 +18,8 @@
 	font-style: normal;
 }
 .icon {
-    background: url('/images/spriteico.png') no-repeat;
-    display: inline-block;
+	background: url('/images/spriteico.png') no-repeat;
+	display: inline-block;
 }
 .icon_fb{
 	background-position: -26px -30px;
@@ -120,7 +120,7 @@
   font-size:41px;
   font-weight:bold;
   span{
-    color:red;
+	color:red;
   }
 
 
@@ -174,5 +174,4 @@ input{
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #c0c0c0;
-  opacity: 1;
-}
+  opacity: 1;}
