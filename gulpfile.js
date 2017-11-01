@@ -54,4 +54,3 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('./app/fonts/'))
 });
 gulp.task('default', ['html', 'scss', 'images','webserver','fonts']);
-
