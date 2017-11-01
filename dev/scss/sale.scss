@@ -51,5 +51,30 @@
 			}
 		}
 	}
+	@media (max-width:863px){
+		.promo__content{
+			padding: 10px 0 10px 10px;
+		}
+	}
+	@media (max-width:550px){
+		.promo__content{
+			padding: 10px 0 10px 0;
+			text-align: center;
+			span{
+				&:first-child{
+					font-size: 14px;
+				}
+				&:last-child{
+					font-size: 10px;
+				}
+			}
+		}
+		.promotion{
+			padding: 20px 0 20px 0;
+			span{
+					font-size: 27px;
+			}		
+		}	
+	}
 }
 
