@@ -1,35 +1,22 @@
-@mixin breakpoint($point) {
-   @if $point == desktop {
-     @media (min-width: 70em) { @content ; }
-  }
-   @else if $point == laptop {
-     @media (min-width: 64em) { @content ; }
-  }
-    @else if $point == tablet {
-     @media (min-width: 50em) { @content ; }
-  }
-   @else if $point == phablet {
-     @media (min-width: 37.5em)  { @content ; }
-  }
-  @else if $point == mobileonly {
-     @media (max-width: 37.5em)  { @content ; }
-
-  }
-}
 @font-face {
 	font-family: 'Sansation-Regular';
-		src:url('../fonts/Sansation-Regular.ttf') format('truetype');
+	src: url('../fonts/Sansation-Regular.eot');
+	src: url('../fonts/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Regular.woff') format('woff'),
+		url('../fonts/Sansation-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Sansation-Bold';
-	src: url('../fonts/Sansation-Bold.ttf') format('truetype');
+	src: url('../fonts/Sansation-Bold.eot');
+	src: url('../fonts/Sansation-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sansation-Bold.woff') format('woff'),
+		url('../fonts/Sansation-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 *{
-	font-family: 'Sansation';
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -37,9 +24,6 @@
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
  	}
- img{
- 	max-width: 100%;
- }
 .icon_fb, .icon_vk, .icon_tw, .icon_designing, .icon_investigation, .icon_thermal, .icon_design, .icon_solar, .icon_construction, .icon_price, .icon_articles,
 .icon_order, .icon_reviews, .icon_check, .icon_marker{
     background: url('/images/spriteico.png') no-repeat;
@@ -122,88 +106,16 @@
 	width: 60px;
 	height: 97px;
 }
-<<<<<<< HEAD
-// start header top line
-.header{
-	text-align: center;
-	padding: 20px 0;
-	img{
-		margin-top: 20px;
-	}
-	.header_contacts{
-		
-		.phones{
-			font-size: 26px;
-			span:first-child{
-				font-size:17px;
-				color:#707070;
-			}
-		}	
-		.adress{
-			font-size:17px;
-			color:#707070;
-		}
-	}
-}
-@media (min-width:800px){
-	.put-right{
-		float:right;
-		display: inline-block;
-		
-	}
-	.header{
-		img{
-			margin-top: 0;
-		}
-		.phones{
-			padding: 0 25px 0 0;
-		}
-	}
-}
-// End header top line
-
-
-.advantages-title-num{
-	display:block;
-	color:#4b9bf0;
-	font-size:78px;
-	font-family:'Sansation-Bold';
-}
-.advantages-title{
-	display:inline-block;
-	color:black;
-	text-transform: uppercase;
-	font-size:26px;
-	line-height: 1.7em;
-	font-family:'Sansation-Bold';
-}
-.advanatges-cpo{
-	font-size:72px;
-	color:#4b9bf0;
-	text-transform: uppercase;
-	font-family:'Sansation-Bold';
-}
-.advantages-customer{
-	font-size: 58px;
-	color:#4b9bf0;
-	font-family:'Sansation-Bold';
-}
-.years{
-	font-family:'Sansation-Bold';
-	display:inline-block;
-	position:relative;
 .phones{
 	font-size: 26px;
 	span:first-child{
-		font-size:112px;
-		color:#f52556;
-		
+		font-size:17px;
+		color:#707070;
 	}
-	span:nth-child(2){
-		position:absolute;
-		top:55%;
-		right:-45%; 
-	}
+}	
+.adress{
+	font-size:17px;
+	color:#707070;
 }
 .section{
 	padding:50px 0 50px 0;
