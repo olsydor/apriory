@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
 			font-family: "MyriadProRegular";
 			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
 			src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
@@ -8,7 +7,6 @@
 			font-style: normal;
 			font-weight: normal;
 	}
-
   @font-face {
       font-family: 'sansationbold';
       src: url('../font/sansation/sansation-bold-webfont.eot');
@@ -19,7 +17,6 @@
       font-weight: normal;
       font-style: normal;
   }
-
   @font-face {
       font-family: 'sansationregular';
       src: url('../font/sansation/sansation-regular-webfont.eot');
@@ -30,10 +27,8 @@
       font-weight: normal;
       font-style: normal;
   }
-
 body{
   font-family: 'sansationregular';
-=======
 	font-family: 'Sansation-Regular';
 	src: url('../fonts/Sansation-Regular.eot');
 	src: url('../fonts/Sansation-Regular.eot?#iefix') format('embedded-opentype'),
@@ -41,9 +36,7 @@ body{
 		url('../fonts/Sansation-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
->>>>>>> fd00285a6be40fe70b9463ed5ec45cf671e5173b
 }
-
 .btn{
   font-family: "MyriadProRegular";
 	height: 70px;
@@ -206,8 +199,6 @@ input{
     color:red;
   }
 }	
-<<<<<<< HEAD
-=======
 .input{
   width: 287px;
   height: 50px;
@@ -240,4 +231,3 @@ input{
   color: #c0c0c0;
   opacity: 1;
 }
->>>>>>> fd00285a6be40fe70b9463ed5ec45cf671e5173b
