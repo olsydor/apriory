@@ -180,24 +180,9 @@
 	color:#4b9bf0;
 	font-weight:bold;
 }
-.years{
-	font-weight:bold;
-	display:inline-block;
-	position:relative;
-	span:first-child{
-		font-size:112px;
-		color:#f52556;
-		
-	}
-	span:nth-child(2){
-		position:absolute;
-		top:55%;
-		right:-45%; 
-	}
-}
 .advantages-text{
 	border-top: 1px solid #929292;
-
+}
 .advantages{
 	height:130px;
 	vertical-align: bottom;
@@ -400,25 +385,5 @@ input{
 	float: left;
 	background:#a3ec58;
 	padding:15px;
-}
-.warranty{
-	// text-align:center;
-	&-list{
-		height:95px;
-	}
-	&-text{
-		float:left;
-		padding: 22px;
-		background:#76c327;
-		color:#fff;
-	}
-}
-
-
-.mainpicture{
-	height:675px;
-	background-image:url(../images/header_picture.jpg);
-	background-size:contain;
-	background-repeat: no-repeat;
 }
 
