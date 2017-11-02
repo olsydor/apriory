@@ -1,7 +1,8 @@
 node_modules/
-.gitignore
 package.json
-gulpfile.js
 *.psd
+
 app/
 app/*
+
+package-lock.json

@@ -4,16 +4,17 @@ html
 		include ./parts/head.pug
 	body
 		.wrapper
-			.section.header
+			.header
+				.header_contacts.put-right
+					a.phones(href="tel:3512235317")
+						span (351) 
+						span 223-53-17
+					a.phones(href="tel:3512235316")
+						span (351)
+						span 223-53-16	
+					span.adress г. Челябинск,ул. 
+						|Российская 224
 				img(src="images/apriory_logo.jpg")
-				a.phones(href="tel:3512235317")
-					span (351) 
-					span 223-53-17
-				a.phones(href="tel:3512235316")
-					span (351)
-					span 223-53-16	
-				span.adress г. Челябинск,ул. 
-					|Российская 224
 		.mainpicture
 			img(src="../images/header_picture.jpg", alt="main")
 			.buttons
