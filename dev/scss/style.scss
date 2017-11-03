@@ -81,13 +81,11 @@
 	}
 }
 // End header top line
-
-
 .advantages-title-num{
 	display:block;
 	color:#4b9bf0;
 	font-size:78px;
-	font-family:'Sansation-Bold';
+	font-weight:bold;
 }
 .advantages-title{
 	display:inline-block;
@@ -95,24 +93,25 @@
 	text-transform: uppercase;
 	font-size:26px;
 	line-height: 1.7em;
-	font-family:'Sansation-Bold';
+	font-weight:bold;
 }
 .advanatges-cpo{
 	font-size:72px;
 	color:#4b9bf0;
 	text-transform: uppercase;
-	font-family:'Sansation-Bold';
+	font-weight:bold;
 }
 .advantages-customer{
 	font-size: 58px;
 	color:#4b9bf0;
-	font-family:'Sansation-Bold';
+	font-weight:bold;
 }
 .years{
-	font-family:'Sansation-Bold';
+	font-weight:bold;
 	display:inline-block;
 	position:relative;
 	span:first-child{
+		font-weight:bold;
 		font-size:112px;
 		color:#f52556;
 		
@@ -123,7 +122,6 @@
 		right:-45%; 
 	}
 }
-
 .section{
 	padding:50px 0 50px 0;
 }
@@ -131,19 +129,6 @@
 	padding:30px 0 30px 0;
 	background-color: #ededed;
 }	
-
-
-.title{
- text-align:center;
-  text-transform:uppercase;
-  font-size:41px;
-  font-weight:bold;
-  span{
-    color:red;
-  }
-}	
-
-//Start cols with advantages
 .advantages{
 	vertical-align: bottom;
 	padding-bottom: 10px;
@@ -180,26 +165,28 @@
 	color:#4b9bf0;
 	font-weight:bold;
 }
+.years{
+	font-weight:bold;
+	display:inline-block;
+	position:relative;
+	span:first-child{
+		font-size:112px;
+		color:#f52556;
+		
+	}
+	span:nth-child(2){
+		position:absolute;
+		top:55%;
+		right:-45%; 
+	}
+}
 .advantages-text{
 	border-top: 1px solid #929292;
-}
-.advantages{
-	height:130px;
-	vertical-align: bottom;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #929292;
-}
-.advantages_cpo{
-padding-top: 36px;
-}
-.advantages-text{
-
 	padding-top:10px;
 	color:#929292;
 	font-size:18px;
 	font-style:none;
 }
-
 @media (min-width:600px){
 	.years{
 		span:first-child{
@@ -223,11 +210,6 @@ padding-top: 36px;
 		span:first-child{
 		font-size:89.6px;
 		}
-		// span:nth-child(2) {
-  //   position: absolute;
-  //   top: 60%;
-  //   right: -46%;
-  // 	}
 	}
 	.advantages-title-num{
 		font-size:62.4px;
@@ -371,9 +353,6 @@ input{
 		text-transform:uppercase;
 	}
 	span{
-		display:inline-block;
-	}
-	span:nth-child(2){
 		color:#f52556;
 	}
 }
