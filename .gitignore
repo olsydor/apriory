@@ -1,6 +1,8 @@
 node_modules/
 package.json
 *.psd
-package-lock.json
-app/
 
+app/
+app/*
+
+package-lock.json

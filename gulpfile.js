@@ -53,4 +53,7 @@ gulp.task('fonts', function() {
     .pipe(watch('./dev/fonts/*'))
     .pipe(gulp.dest('./app/fonts/'))
 });
+
 gulp.task('default', ['html', 'scss', 'images','webserver','fonts']);
+
+>>>>>>> dev
