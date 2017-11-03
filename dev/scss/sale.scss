@@ -6,11 +6,12 @@
 		background: #f52556;
 		padding: 20px 25px 20px 0;
 		position: relative;
-		font-size: bold;
+		font-weight: bold;
 		span{
 			display: inline;
 			font-size: 47px;
 			color: #ffffff;
+		
 		}
 		&:before{
 			content:'';
@@ -43,7 +44,7 @@
 			&:first-child{
 				font-size: 18px;
 				text-transform: uppercase;
-				font-size: bold;
+				font-weight: bold;
 			}
 			&:last-child{
 				font-size: 14px;
@@ -51,15 +52,16 @@
 			}
 		}
 	}
-	@media (max-width:863px){
+	@media (max-width:897px){
 		.promo__content{
-			padding: 10px 0 10px 10px;
+			padding: 15px 0 15px 10px;
+			text-align: center;
 		}
 	}
-	@media (max-width:550px){
+	@media (max-width:585px){
 		.promo__content{
 			padding: 10px 0 10px 0;
-			text-align: center;
+			
 			span{
 				&:first-child{
 					font-size: 14px;
