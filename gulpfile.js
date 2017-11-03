@@ -55,5 +55,3 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('default', ['html', 'scss', 'images','webserver','fonts']);
-
->>>>>>> dev
