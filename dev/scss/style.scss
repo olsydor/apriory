@@ -331,11 +331,11 @@ input{
 .portfolio_block{
 	padding-top:50px;
 	text-align:center;
-	height:750px;
+	//height:750px;
 	display:block;
 	width:100%;
 	background:url(../images/portfolio.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	img{
 		
 	}
