@@ -4,3 +4,4 @@ dev.zip
 *.psd
 app/
 package.json
+app/*

@@ -32,14 +32,17 @@ gulp.task('html', function(){
   .pipe(gulp.dest('./app/'))
   gulp.src('./dev/js/*.js')
 	  .pipe(watch ('./dev/js/*.js'))
+<<<<<<< HEAD
 	  .pipe(gulp.dest('./app/js'));
+=======
+	  .pipe(gulp.dest('./app/js'))
+>>>>>>> 625a09a390b03a82f60d996a9a60d1086abf2724
 });
 
 gulp.task('scss', function() {
 	gulp.src('./dev/scss/*.scss')
 	.pipe(watch('./dev/scss/*.scss'))
 		.pipe(scss())
-		//.pipe(cleancss)
 		.pipe(gulp.dest('./app/css/'));
 
 });
@@ -49,5 +52,10 @@ gulp.task('images', function() {
     .pipe(watch('./dev/images/*'))
     .pipe(gulp.dest('./app/images/'))
 });
+gulp.task('fonts', function() {
+    gulp.src('./dev/fonts/*')
+    .pipe(watch('./dev/fonts/*'))
+    .pipe(gulp.dest('./app/fonts/'))
+});
+gulp.task('default', ['html', 'scss', 'images','webserver','fonts']);
 
-gulp.task('default', ['html', 'scss', 'images', 'webserver']);
