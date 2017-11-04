@@ -27,7 +27,8 @@
 	text-align: left;
 }
 .wraper__map{
-	
+	position: relative;
+	top: 25px;
 }
 .contacts{
 	margin-right:-10px;
@@ -67,7 +68,9 @@
 	
 }
 @include breakpoint (mobileonly){
-	
+	.wraper__map{
+		top: 0;
+	}
 	[class*="col-"]{
 		padding: 0;
 	}
