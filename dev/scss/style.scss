@@ -29,7 +29,7 @@
 	font-style: normal;
 }
 *{
-	font-family: 'Sansation';
+	font-family: 'Sansation-Regular';
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -40,13 +40,13 @@
  img{
  	max-width: 100%;
  }
-
-
-
 // start header top line
 .header{
 	text-align: center;
 	padding: 20px 0;
+	a{
+		text-decoration:none;
+	}
 	img{
 		margin-top: 20px;
 	}
@@ -54,7 +54,10 @@
 		
 		.phones{
 			font-size: 26px;
+			color:black;
+			font-weight:bold;
 			span:first-child{
+				font-weight:normal;
 				font-size:17px;
 				color:#707070;
 			}
@@ -81,47 +84,6 @@
 	}
 }
 // End header top line
-.advantages-title-num{
-	display:block;
-	color:#4b9bf0;
-	font-size:78px;
-	font-weight:bold;
-}
-.advantages-title{
-	display:inline-block;
-	color:black;
-	text-transform: uppercase;
-	font-size:26px;
-	line-height: 1.7em;
-	font-weight:bold;
-}
-.advanatges-cpo{
-	font-size:72px;
-	color:#4b9bf0;
-	text-transform: uppercase;
-	font-weight:bold;
-}
-.advantages-customer{
-	font-size: 58px;
-	color:#4b9bf0;
-	font-weight:bold;
-}
-.years{
-	font-weight:bold;
-	display:inline-block;
-	position:relative;
-	span:first-child{
-		font-weight:bold;
-		font-size:112px;
-		color:#f52556;
-		
-	}
-	span:nth-child(2){
-		position:absolute;
-		top:55%;
-		right:-45%; 
-	}
-}
 .section{
 	padding:50px 0 50px 0;
 }
@@ -290,14 +252,38 @@ input{
 }
 .buttons{
 	margin:auto;
-	top:200px;
-	right:50%;
 	font-size:0px;
+	@include breakpoint(phablet){
+	  position: absolute;
+    margin: -102px -280px 0px 0;
+    top: 83%;
+    right: 50%;
+    font-size: 0px;
+	}
+}
+.buttons-social{
+	display: inline-block;
+  height: 37px;
+  width: 37px;
+  border-radius: 20px;
+  margin-top:10px;
+  padding: 8px;
+  margin-right:10px;
+  @include breakpoint(phablet){
+  	background:#fff;
+  	margin-top: 9px;
+  }
+  // @include breakpoint(tablet){
+  // 	margin-top: 13px;
+  // }
+  @include breakpoint(laptop){
+  	margin-top: 28px;
+  }
 }
 .btn{
 	color:#fff;
 	display:block;
-	padding: 25px;
+	padding: 20px;
 	background: #76c327;
 	text-transform:uppercase;
 	&-send{
@@ -308,7 +294,7 @@ input{
 		min-width:280px;
 		margin-top:10px;
 		font-size:31px;
-		padding:23px;
+		padding:20px;
 		display:inline-block;
 		background:#4b9bf0;
 	}
@@ -316,7 +302,7 @@ input{
 		min-width:280px;
 		margin-top: 10px;
 		font-size:31px;
-		padding:23px;
+		padding:20px;
 		display:inline-block;
 		background:#f52556;
 	}
@@ -353,6 +339,9 @@ input{
 		text-transform:uppercase;
 	}
 	span{
+		color:black;
+	}
+	span:nth-child(2){
 		color:#f52556;
 	}
 }
