@@ -16,6 +16,9 @@
 
   }
 }
+.wrapper_promotion{
+	margin:0 -10px;
+}
 .promotion{
 	display: block;
 	text-align: center;
@@ -46,7 +49,6 @@
 	.wrapper_promotion{
 		position: relative;
 		top: 12px;
-		
 		.promotion{
 			display: inline-block;
 			background: #f52556;

@@ -41,9 +41,6 @@
  img{
  	max-width: 100%;
  }
-body{
-	overflow-x: hidden;
-}
 // start header top line
 .header{
 	text-align: center;
@@ -93,6 +90,9 @@ body{
 // End header top line
 .section{
 	padding:50px 0 50px 0;
+	&_promotion{
+	padding:50px 0 0px 0;	
+	}
 }
 .section_grey{
 	padding:30px 0 30px 0;
@@ -203,7 +203,6 @@ body{
 //End of advantages
 //Start of header menu
 .header-menu{
-	margin-top:70px;
 	display:block;
 	text-align:center;
 	li{
@@ -252,14 +251,18 @@ input{
 	background-size:cover;
 	position:relative;
 	text-align:center;
-	padding: 346px 0 28px 20px;
+	padding: 30px 0 30px 20px;
+	min-height: 100vh;
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
 	img{
 		width:100%;
 		margin: 0 auto;
 	}
 }
 .buttons{
-	margin:auto;
+	// margin:auto;
 	font-size:0px;
 	@include breakpoint(phablet){
 	  // position: absolute;
@@ -329,7 +332,6 @@ input{
 .title{
 	font-weight:bold;
 	text-align:center;
-	margin:40px;
 	color:black;
 	font-size: 41px;
 	text-transform:uppercase;

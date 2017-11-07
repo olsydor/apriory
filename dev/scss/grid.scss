@@ -24,9 +24,7 @@
 .wrapper{
 		margin: 0 auto;
 		max-width: 960px;	
-	@include breakpoint(phablet){
 		padding: 0 10px;
-	}
 }
 .clearfix{
 	&:after{
