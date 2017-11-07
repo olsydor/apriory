@@ -48,6 +48,94 @@
       font-style: normal;
   }
 
+*{
+	font-family: 'sansationregular';
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+ 	}
+.icon {
+    background: url('/images/spriteico.png') no-repeat;
+    display: inline-block;
+}
+.icon_fb{
+	background-position: -26px -30px;
+	width: 14px;
+	height: 21px;
+}
+.icon_vk{
+	background-position: -76px -30px;
+	width: 17px;
+	height: 21px;
+}
+.icon_tw {
+	background-position: -135px -29px;
+	width: 10px;
+	height: 23px;
+}
+.icon_house{
+	background-position: -184px -31px;
+	width: 70px;
+	height: 61px;
+}
+.icon_zoom{
+	background-position: -299px -31px;
+	width: 56px;
+	height: 56px;
+}
+.icon_radiator{
+	background-position:  -393px -31px;
+	width: 58px;
+	height: 60px;
+}
+.icon_palitra{
+	background-position:  -485px -31px;
+	width: 63px;
+	height: 60px;
+}
+.icon_solarbat{
+	background-position: -591px -33px;
+	width: 63px;
+	height: 62px;
+}
+.icon_buildcar{
+	background-position: -698px -33px;
+	width: 80px;
+	height: 72px;
+}
+.icon_p{
+	background-position: -891px -34px;
+	width: 23px;
+	height: 32px;
+}
+.icon_pictext{
+	background-position:  -971px -34px;
+	width: 34px;
+	height: 26px;
+}
+.icon_envelope{
+	background-position: -971px -34px;
+	width: 37px;
+	height: 27px;
+}
+.icon_people{
+	background-position: -1044px -32px;
+	width: 50px;
+	height: 41px;
+}
+.icon_check{
+	background-position: -1129px -34px;
+	width: 59px;
+	height: 59px;
+}
+.icon_marker {
+	background-position:  -1228px -34px;
+	width: 60px;
+	height: 97px;
+}
  img{
  	max-width: 100%;
  }
@@ -109,6 +197,39 @@ body{
 	padding:30px 0 30px 0;
 	background-color: #ededed;
 }	
+
+.title{
+ text-align:center;
+  text-transform:uppercase;
+  font-size:41px;
+  font-weight:bold;
+  span{
+    color:red;
+  }
+}	
+.input{
+  width: 287px;
+  height: 50px;
+  font-size: 22px;
+  padding-left: 18px;
+  margin-right: 45px;
+  color: #c0c0c0;
+}
+.pool_title{
+
+}
+.checkbox input:before {
+  content: '';
+  background: #fff;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #c0c0c0;
+}	
+//Start cols with advantages
+
 .advantages{
 	vertical-align: bottom;
 	padding-bottom: 10px;
@@ -501,4 +622,16 @@ input{
 	float: left;
 	background:#a3ec58;
 	padding:15px;
+}
+.warranty{
+	// text-align:center;
+	&-list{
+		height:95px;
+	}
+	&-text{
+		float:left;
+		padding: 22px;
+		background:#76c327;
+		color:#fff;
+	}
 }
