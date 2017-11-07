@@ -1,3 +1,5 @@
+@import '_reset.scss';
+
 @font-face {
 			font-family: "MyriadProRegular";
 			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
@@ -17,6 +19,7 @@
            url('../font/sansation/sansation-bold-webfont.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
+
   }
 
   @font-face {
@@ -28,6 +31,7 @@
            url('../font/sansation/sansation-regular-webfont.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
+
   }
 
 body{
@@ -81,4 +85,141 @@ input{
 :-moz-placeholder { /* Firefox 4 - 18 */
   color: #c0c0c0;
   opacity: 1;
+}
+
+.feature{
+  &__main-title{
+    text-align:right;
+    text-transform: uppercase;
+    font-size: 44px;
+    border-bottom: 6px solid #fff;
+    border-top: 6px solid #fff;
+    color: #fff;
+    padding: 30px;
+    width: 105%;
+  }
+  .wrapper{
+    padding:0;
+    position: relative;
+    z-index: 2;
+  }
+  &__inner{
+    float:right;
+    opacity:0;
+    transition:2s all ease;
+    width:50%;
+    padding: 50px 0;
+  }
+  &.animate{
+    .feature__inner{
+      opacity:1;
+    }
+    &:before{
+      z-index: 1;
+      transition:1s all ease;
+      transform:rotate(5deg) translateX(.2%);
+    }
+  }
+  position:relative;
+  overflow:hidden;
+  height: 750px;
+  background-position: center !important;
+  &:before{
+    content:'';
+    position:absolute;
+    top:-100%;
+    bottom:-100%;
+    box-sizing:content-box;
+    padding-right: 100%;
+    left:50%;
+    width:50%;
+    background:white;
+    transform:rotate(5deg) translateX(102%);
+  }
+  &:nth-child(odd){
+    // background:green;
+    .feature__main-title{
+      text-align:left;
+      margin-left: -30px;
+    }
+    .feature__inner{
+      float:left;
+      .icon{
+        background: url(../images/spriteico.png) #54a5f7;
+      }
+    }
+    &:before{
+      left:auto;
+      right:50%;
+      padding-right:0;
+      padding-left:100%;
+      transform:rotate(-5deg) translateX(-.2%);
+    }
+  }
+}
+
+.feature__inner .feature__main .feature__icons .icon-price{
+  background-position: -797px -14px;
+}
+.feature__inner .feature__main .feature__icons .icon-articles{
+  background-position: -872px -14px;
+}
+.feature__inner .feature__main .feature__icons .icon-order{
+  background-position: -954px -14px;
+}
+.feature__inner .feature__main .feature__icons .icon-reviews{
+  background-position: -1033px -17px;
+}
+
+.feature__main{
+  padding: 0px 142px 0 46px;
+  .feature__icons{
+    .icon{
+      background: url(../images/spriteico.png) #65b914;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+    .icon-title{
+      float: left;
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+    }
+    float: left;
+    margin-right: 50px;
+  }
+  .feature__title{
+    font-size: 31px;
+    text-transform: uppercase;
+    padding: 220px 0 40px 0;
+  }
+  .feature__text{
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+.reature_0{
+  background: url(../images/bg-1.png) no-repeat;
+}
+
+.reature_1{
+  background: url(../images/bg-2.png) no-repeat;
+}
+
+.reature_2{
+  background: url(../images/bg-3.png) no-repeat;
+}
+
+.reature_3{
+  background: url(../images/bg-4.png) no-repeat;
+}
+
+.reature_4{
+  background: url(../images/bg-5.png) no-repeat;
+}
+
+.reature_5{
+  background: url(../images/bg-6.png) no-repeat;
 }
