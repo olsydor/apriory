@@ -7,7 +7,7 @@
   box-sizing: border-box; }
 
 .icon {
-  background: url("/images/spriteico.png") no-repeat;
+  background: url("/images/spriteico.png") center top no-repeat;
   display: inline-block; }
 
 .icon_fb {

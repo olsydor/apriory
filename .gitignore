@@ -4,3 +4,4 @@ package.json
 gulpfile.js
 *.psd
 app/
+app/*
