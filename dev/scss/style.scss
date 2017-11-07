@@ -1,5 +1,3 @@
-
-
 @mixin breakpoint($point) {
    @if $point == desktop {
      @media (min-width: 70em) { @content ; }
@@ -8,8 +6,6 @@
      @media (min-width: 64em) { @content ; }
   }
     @else if $point == tablet {
-     @media (min-width: 50em) { @content ; }
->>>>>>> origin/dev
   }
    @else if $point == phablet {
      @media (min-width: 37.5em)  { @content ; }
@@ -20,31 +16,45 @@
   }
 }
 @font-face {
-	font-family: 'Sansation-Regular';
-		src:url('../fonts/Sansation-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Sansation-Bold';
-	src: url('../fonts/Sansation-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-*{
-	font-family: 'Sansation-Regular';
-	margin: 0;
-	padding: 0;
-	border: 0;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box; 
- 	}
+			font-family: "MyriadProRegular";
+			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+			src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+			url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+			url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+  @font-face {
+      font-family: 'sansationbold';
+      src: url('../font/sansation/sansation-bold-webfont.eot');
+      src: url('../font/sansation/sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../font/sansation/sansation-bold-webfont.woff2') format('woff2'),
+           url('../font/sansation/sansation-bold-webfont.woff') format('woff'),
+           url('../font/sansation/sansation-bold-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+  @font-face {
+      font-family: 'sansationregular';
+      src: url('../font/sansation/sansation-regular-webfont.eot');
+      src: url('../font/sansation/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../font/sansation/sansation-regular-webfont.woff2') format('woff2'),
+           url('../font/sansation/sansation-regular-webfont.woff') format('woff'),
+           url('../font/sansation/sansation-regular-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
  img{
  	max-width: 100%;
  }
 body{
 	overflow-x: hidden;
+    font-family: 'sansationregular';
 }
 // start header top line
 .header{
@@ -420,7 +430,7 @@ input{
       padding-top: 20px;
     }
     float: left;
-    margin-right: 50px;
+    text-align: center;
   }
   .feature__title{
     font-size: 31px;
