@@ -41,60 +41,63 @@
       <html>
         <head></head>
         <body>
-          <pool_title>Тип вашего обьекта</pool_title>
           <form>
-            <label class="checkbox-inline">
-              <input type="checkbox" value="">Жылой дом
+            <div class="row clearfix">
+              <div class="form__title">тип вашего обьекта:<br></div>
+              <div class="line"></div>
+              <div class="col-phablet-1-3">
+                <label class="build-obj">
+                  <input class="radio-button" type="radio" name="build-obj" value="house"><span class="check"></span>Жылой дом
+                </label>
+              </div>
+              <div class="col-phablet-1-3">
+                <label class="build-obj">
+                  <input class="radio-button" type="radio" name="build-obj" value="public_build"><span class="check"></span>Общественное здание
+                </label>
+              </div>
+              <div class="col-phablet-1-3">
+                <label class="build-obj">
+                  <input class="radio-button" type="radio" name="build-obj" value="сonstruction"><span class="check"></span>Сооружение<br>
+                </label>
+              </div>
+            </div>
+            <div class="form__title">Параметры:</div>
+            <div class="line"></div><br>
+            <label class="parameters">Площадь
+              <input type="number" maxlenght="3">
             </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" value="">Общественное здание
+            <label class="parameters">Этаж
+              <input type="number" maxlenght="2">
             </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" value="">Сооружение
+            <label class="parameters">Высота этажа
+              <input type="number" maxlenght="2"><br>
             </label>
-          </form>
-          <pool_title>Параметры</pool_title>
-          <form>
-            <label class="checkbox-inline">
-              <input type="number" name="">Площадь
+            <div class="form__title">Параметры проектирования:<br></div>
+            <div class="line"></div>
+            <label class="parameters-projecting">
+              <input class="radio-button" type="radio" name="parameters-projecting" value="new-building"><span class="check"></span>Новое строительство
             </label>
-            <label class="checkbox-inline">
-              <input type="number" autofocus maxlength="2" name="">Етаж
+            <label class="parameters-projecting">
+              <input class="radio-button" type="radio" name="parameters-projecting" value="reconstruction"><span class="check"></span>Реконструкция
             </label>
-            <label class="checkbox-inline">
-              <input type="number" autofocus maxlength="2" name="">Высота этажа
+            <label class="parameters-projecting">Иное
+              <input type="text" maxlenght="20"><br>
             </label>
-          </form>
-          <pool_title>Параметры проектирования</pool_title>
-          <form>
-            <label class="checkbox-inline">
-              <input type="checkbox" value="">Новое строительство
+            <div class="form__title">Состав проектирования:</div>
+            <div class="line"></div><br>
+            <label class="content-projecting">
+              <input class="radio-button" type="radio" name="content-projecting" value="floor"><span class="check"></span>Этаж
             </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" value="">Реконструкция
+            <label class="content-projecting">
+              <input class="radio-button" type="radio" name="content-projecting" value="AR"><span class="check"></span>АР.<br>
             </label>
-            <label class="checkbox-inline">
-              <input type="text" autofocus maxlength="20" value="">Иное
+            <div class="form__title">Иные требования:<br></div>
+            <label class="true">
+              <textarea class="another-requirements"></textarea>
+              <input type="text" name="name" placeholder="Имя...">
+              <input type="text" name="phone" placeholder="Телефон...">
+              <button class="btn btn-send" type="submit">Оставить заявку</button>
             </label>
-          </form>
-          <pool_title>Состав проектирования</pool_title>
-          <form>
-            <label class="checkbox-inline">
-              <input type="number" autofocus maxlength="20" value="">Этаж 
-            </label>
-            <label class="checkbox-inline">
-              <input type="number" value="">АР.
-            </label>
-          </form>
-          <pool_title>Иные требования:</pool_title>
-          <form>
-            <label class="checkbox-inline">
-              <input type="text" autofocus maxlength="140" value="">
-            </label>
-          </form>
-          <form>
-            <input type="text" placeholder="Имя..." autofocus maxlength="20">
-            <input type="tel" pattern="(ddd) ?ddd-dd-dd" placeholder="Телефон..."><a class="btn btn-application" href=""> оставить заявку</a>
           </form>
         </body>
       </html>

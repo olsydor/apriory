@@ -2,52 +2,68 @@ doctype
 html
 	head
 	body
-		pool_title Тип вашего обьекта
+		
 		form
-			label(class="checkbox-inline")
-				input(type="checkbox" value="")
-				| Жылой дом
-			label(class="checkbox-inline")
-				input(type="checkbox" value="")
-				| Общественное здание
-			label(class="checkbox-inline")
-				input(type="checkbox" value="")
-				| Сооружение
-		pool_title Параметры
-		form
-			label(class="checkbox-inline")
-				input(type="number"  name="")
-				|Площадь
-			label(class="checkbox-inline")
-				input(type="number" autofocus maxlength="2" name="")
-				|Етаж
-			label(class="checkbox-inline")
-				input(type="number" autofocus maxlength="2" name="")
-				|Высота этажа
-		pool_title Параметры проектирования
-		form
-			label(class="checkbox-inline")
-				input(type="checkbox" value="")
-				|Новое строительство
-			label(class="checkbox-inline")
-				input(type="checkbox" value="")
-				|Реконструкция
-			label(class="checkbox-inline")
-				input(type="text" autofocus maxlength="20" value="")
-				|Иное
-		pool_title Состав проектирования
-		form
-			label(class="checkbox-inline")
-				input(type="number" autofocus maxlength="20" value="")
-				| Этаж 
-			label(class="checkbox-inline")
-				input(type="number" value="")
-				| АР.
-		pool_title Иные требования:
-		form
-			label(class="checkbox-inline")
-				input(type="text" autofocus maxlength="140" value="")
-		form
-			input(type="text" placeholder="Имя..." autofocus maxlength="20")
-			input(type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d" placeholder="Телефон...")
-			a.btn.btn-application(href="") оставить заявку
+			.row.clearfix
+				.form__title тип вашего обьекта:<br>
+				.line
+				.col-phablet-1-3
+				label(class="build-obj")
+					input(class="radio-button" type="radio" name="build-obj" value="house")
+					span(class="check")
+					| Жылой дом
+				.col-phablet-1-3
+				label(class="build-obj")
+					input(class="radio-button" type="radio" name="build-obj" value="public_build")
+					span(class="check")
+					| Общественное здание
+				.col-phablet-1-3
+				label(class="build-obj")
+					input(class="radio-button" type="radio" name="build-obj" value="сonstruction")
+					span(class="check")
+					| Сооружение<br>
+			.form__title Параметры:
+			.line
+			<br>
+			label(class="parameters")
+				| Площадь
+				input(type="number" maxlenght="3")
+			label(class="parameters")
+				| Этаж
+				input(type="number" maxlenght="2")
+			label(class="parameters")
+				| Высота этажа
+				input(type="number" maxlenght="2")
+				<br>
+			.form__title Параметры проектирования:<br>
+			.line
+			label(class="parameters-projecting")
+				input(class="radio-button" type="radio" name="parameters-projecting" value="new-building")
+				span(class="check")
+				| Новое строительство
+			label(class="parameters-projecting")
+				input(class="radio-button" type="radio" name="parameters-projecting" value="reconstruction")
+				span(class="check")
+				| Реконструкция
+			label(class="parameters-projecting")
+				| Иное
+				input(type="text" maxlenght="20")
+				<br>
+			.form__title Состав проектирования:
+			.line
+			<br>
+			label(class="content-projecting")
+				input(class="radio-button" type="radio" name="content-projecting" value="floor")
+				span(class="check")
+				| Этаж
+			label(class="content-projecting")
+				input(class="radio-button" type="radio" name="content-projecting" value="AR")
+				span(class="check")
+				| АР.<br>
+			.form__title Иные требования:<br>
+			label(class=)
+				textarea(class="another-requirements")
+
+				input(type="text" name="name" placeholder="Имя...")
+				input(type="text" name="phone" placeholder="Телефон...")
+				button.btn.btn-send(type='submit') Оставить заявку
