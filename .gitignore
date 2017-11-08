@@ -1,7 +1,6 @@
 node_modules/
 package.json
-dev.zip
 *.psd
 app/
-package.json
 app/*
+package-lock.json
