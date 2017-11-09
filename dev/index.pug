@@ -69,37 +69,7 @@ html
 		.section
 			.wrapper
 				.header-menu
-					ul
-						li
-							a(href="#") 
-								span.icon.icon_house
-								br
-								span.menu-title ПРОЕКТИРОВАНИE
-						li
-							a(href="#") 
-								span.icon.icon_zoom
-								br
-								span.menu-title Обследование
-						li
-							a(href="#") 
-								span.icon.icon_radiator
-								br
-								span.menu-title Тепловизионное Обследование
-						li
-							a(href="#") 
-								span.icon.icon_palitra
-								br
-								span.menu-title Дизайн проекты
-						li
-							a(href="#") 
-								span.icon.icon_solarbat
-								br
-								span.menu-title Солнечные батареи
-						li
-							a(href="#") 
-								span.icon.icon_buildcar
-								br
-								span.menu-title Строительство
+					include ./parts/header_menu.pug
 		.section_promotion
 			.wrapper
 				.wrapper_promotion
@@ -256,8 +226,9 @@ html
 				.col-phablet-1-2 гарантии качестинной роботи
 				.col-phablet-1-2 гарантии качестинной роботи	
 				.col-phablet-1-2 гарантии качестинной роботи
-		.wraper__map
-			#map
+		.section
+			.wraper__map
+				#map
 			.wrapper
 				.col-phablet-1-2.map
 					.contacts
@@ -275,7 +246,7 @@ html
 						.contacts__row
 							.contacts_title Прийом абонетново
 							.text 9:00 до 17:00, с ПН до ПТ
-		.section_promotion
+		.section_promotion.bottom
 			.wrapper
 				.wrapper_promotion
 					.promotion
@@ -283,7 +254,7 @@ html
 					.promo__content
 						span Проект перепланировки в подарок!
 						span * ( при единовременном заказе боле чем на 50 000 р.) 
-		.section.section_grey.aplication
+		.section_grey.aplication
 			.row.clearfix
 				.wrapper
 					.col-phablet-1-2.col-tablet-1-3 
