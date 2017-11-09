@@ -22,9 +22,9 @@
 	margin: 0;
 }
 .wrapper{
-	margin: 0 auto;
-	padding: 0 10px;
-	max-width: 960px;
+		margin: 0 auto;
+		max-width: 960px;	
+		padding: 0 10px;
 }
 .clearfix{
 	&:after{
@@ -58,7 +58,18 @@
  
 }
 .col-{
-	
+	&mobileonly-{
+		&1-4{
+			float:left;
+			width:25%;
+			min-height: 1px;
+		}
+		&1-2{
+			float:left;
+			width:50%;
+			min-height: 1px;
+		}
+	}
 	&phablet-{
 		@include breakpoint(phablet){
 			

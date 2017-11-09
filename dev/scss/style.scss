@@ -29,7 +29,8 @@
 	font-style: normal;
 }
 *{
-	font-family: 'Sansation';
+	text-decoration:none;
+	font-family: 'Sansation-Regular';
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -40,26 +41,67 @@
  img{
  	max-width: 100%;
  }
-.phones{
-	font-size: 26px;
-	span:first-child{
-		font-size:17px;
-		color:#707070;
+// start header top line
+.header{
+	text-align: center;
+	padding: 20px 0;
+	a{
+		text-decoration:none;
 	}
-}	
-.adress{
-	font-size:17px;
-	color:#707070;
+	img{
+		margin-top: 20px;
+	}
+	.header_contacts{
+		li{
+			display:inline-block;
+			margin-right:10px;
+		}
+		.phones{
+			font-size: 26px;
+			color:black;
+			font-weight:bold;
+			span:first-child{
+				font-weight:normal;
+				font-size:17px;
+				color:#707070;
+			}
+		}	
+		.adress{
+			font-size:17px;
+			color:#707070;
+		}
+	}
 }
-
+@media (min-width:800px){
+	.put-right{
+		float:right;
+		display: inline-block;
+		
+	}
+	.header{
+		img{
+			margin-top: 0;
+		}
+		.phones{
+			padding: 0 25px 0 0;
+		}
+	}
+}
+// End header top line
 .section{
 	padding:50px 0 50px 0;
+	&_promotion{
+	padding:50px 0 0px 0;	
+	}
 }
 .section_grey{
 	padding:30px 0 30px 0;
 	background-color: #ededed;
 }	
+<<<<<<< HEAD
 //Start cols with advantages
+=======
+>>>>>>> d76ac945a04de2715835e1ca5c4b2bfc3155e90f
 .advantages{
 	vertical-align: bottom;
 	padding-bottom: 10px;
@@ -141,11 +183,6 @@
 		span:first-child{
 		font-size:89.6px;
 		}
-		// span:nth-child(2) {
-  //   position: absolute;
-  //   top: 60%;
-  //   right: -46%;
-  // 	}
 	}
 	.advantages-title-num{
 		font-size:62.4px;
@@ -170,7 +207,6 @@
 //End of advantages
 //Start of header menu
 .header-menu{
-	margin-top:70px;
 	display:block;
 	text-align:center;
 	li{
@@ -203,9 +239,7 @@
 }
 //End of header menu
 .application{
-	background-color: #f6f6f6;
-	padding-top:40px;
-	padding-bottom:40px;
+	text-align:center;
 	vertical-align:middle;
 }
 input{
@@ -217,34 +251,58 @@ input{
 		padding:15px 51px 10px 15px;
 }
 .mainpicture{
+	background:url('/images/header_picture.jpg');
+	background-size:cover;
 	position:relative;
 	text-align:center;
+	padding: 30px 0 30px 20px;
+	min-height: 100vh;
+	display:flex;
+	justify-content:center;
+	align-items:flex-end;
 	img{
 		width:100%;
 		margin: 0 auto;
 	}
 }
 .buttons{
-	margin:auto;
-	top:200px;
-	right:50%;
+	// margin:auto;
 	font-size:0px;
+	@include breakpoint(phablet){
+	  // position: absolute;
+    // margin: -102px -280px 0px 0;
+    // top: 83%;
+    // right: 50%;
+    font-size: 0px;
+	}
 }
+.buttons-social{
+	display: inline-block;
+  height: 37px;
+  width: 37px;
+  border-radius: 20px;
+  margin-top:10px;
+  padding: 8px;
+  margin-right:10px;
+  background:#fff;
+  margin-top: 9px;
+  }
 .btn{
 	color:#fff;
 	display:block;
-	padding: 25px;
+	padding: 20px;
 	background: #76c327;
 	text-transform:uppercase;
 	&-send{
 		font-size:24px;
 		margin-top:40px;
+		width: 100%;
 	}
 	&-portfolio{
 		min-width:280px;
 		margin-top:10px;
 		font-size:31px;
-		padding:23px;
+		padding:20px;
 		display:inline-block;
 		background:#4b9bf0;
 	}
@@ -252,7 +310,7 @@ input{
 		min-width:280px;
 		margin-top: 10px;
 		font-size:31px;
-		padding:23px;
+		padding:20px;
 		display:inline-block;
 		background:#f52556;
 	}
@@ -267,19 +325,18 @@ input{
 .portfolio_block{
 	padding-top:50px;
 	text-align:center;
-	height:750px;
+	//height:750px;
 	display:block;
 	width:100%;
 	background:url(../images/portfolio.jpg);
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	img{
-		max-width:214px;
+		margin-bottom: 20px;
 	}
 }
 .title{
 	font-weight:bold;
 	text-align:center;
-	margin:40px;
 	color:black;
 	font-size: 41px;
 	text-transform:uppercase;
@@ -289,7 +346,7 @@ input{
 		text-transform:uppercase;
 	}
 	span{
-		display:inline-block;
+		color:black;
 	}
 	span:nth-child(2){
 		color:#f52556;
@@ -304,6 +361,7 @@ input{
 	background:#a3ec58;
 	padding:15px;
 }
+<<<<<<< HEAD
 .warranty{
 	// text-align:center;
 	&-list{
@@ -316,3 +374,6 @@ input{
 		color:#fff;
 	}
 }
+=======
+
+>>>>>>> d76ac945a04de2715835e1ca5c4b2bfc3155e90f
