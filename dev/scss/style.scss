@@ -91,12 +91,18 @@
 .section{
 	padding:50px 0 50px 0;
 	&_promotion{
-	padding:50px 0 0px 0;	
+		overflow: hidden;
+		margin-bottom: -12px;
+		&.bottom{
+			margin-top: -39px;
+		}
+		
 	}
 }
 .section_grey{
 	padding:30px 0 30px 0;
 	background-color: #ededed;
+	overflow: hidden;
 }	
 .advantages{
 	vertical-align: bottom;
@@ -321,10 +327,11 @@ input{
 .portfolio_block{
 	padding-top:50px;
 	text-align:center;
-	//height:750px;
 	display:block;
 	width:100%;
-	background:url(../images/portfolio.jpg);
+	background:url('/images/portfolio.jpg');
+	background-size:cover;
+	min-height:100vh;
 	background-repeat: repeat-y;
 	img{
 		margin-bottom: 20px;

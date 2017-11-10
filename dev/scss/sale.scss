@@ -32,7 +32,7 @@
 	text-align: center;
 	background: #52a2f7;
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px 10px 22px 10px;
 	span{
 		&:first-child{
 			font-size: 18px;
@@ -48,7 +48,7 @@
 @include breakpoint(phablet){
 	.wrapper_promotion{
 		position: relative;
-		top: 12px;
+		//top: 12px;
 		.promotion{
 			display: inline-block;
 			background: #f52556;
@@ -78,6 +78,7 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+			//overflow: hidden;
 			&:before{
 				content:'';
 				position:absolute;
