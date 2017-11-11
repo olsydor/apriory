@@ -27,12 +27,14 @@
 	text-align: left;
 }
 .wraper__map{
+	position: relative;
+	top: 25px;
 	
 }
 .contacts{
-	margin-right:-10px;
+	margin-right:-20px;
 	background: #76c327;
-	padding: 20px 0 20px 0;
+	padding: 20px 0 20px 10px;
 	position: relative;
 	z-index: 2;
 	.contacts__row{
@@ -67,10 +69,10 @@
 	
 }
 @include breakpoint (mobileonly){
-	
-	[class*="col-"]{
-		padding: 0;
+	.wraper__map{
+		top: 0;
 	}
+	
 }
 @include breakpoint(phablet){
 	.contacts{
