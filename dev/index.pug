@@ -164,25 +164,10 @@ html
 					.col-phablet-1-2.col-tablet-1-5
 						a(href="#")
 							img(src="/images/intalk.jpg")
-		.section
+		.section_grey
 			.wrapper
 				.title 	ОПРОСНИЙ ЛИСТ
-				.row.clearfix
-					.col-phablet-1-3 Жилой дом
-					.col-phablet-1-3 Общестивиное здание
-					.col-phablet-1-3 Соорожение
-				.row.clearfix
-					.col-phablet-1-3 Площадь
-					.col-phablet-1-3 Етаж
-					.col-phablet-1-3 Висота етажа
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-3 
-						input(type="text" name="name" placeholder="Имя...")
-					.col-phablet-1-2.col-tablet-1-3
-						input(type="text" name="phone" placeholder="Телефон...")
-					.col-phablet-1-4
-					.col-phablet-1-2.col-tablet-1-3
-						button.btn.btn-send(type='submit') Оставить заявку
+				include ./parts/pool_form.pug
 		.section
 			.wrapper
 				.title Гарантии качественной работы

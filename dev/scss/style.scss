@@ -294,6 +294,59 @@ input{
 		font-size:22px;
 		padding:15px 51px 10px 15px;
 }
+//Start pool_form
+form {
+	text-transform: uppercase;
+	input[type=radio] {
+		display:none;
+}
+	.form_title{
+		font-size: 19px;
+		font-weight: bold;
+	}
+	.form_title:after {
+    display: inline-block;
+    margin: 16px 0 16px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #d0d0d0;
+    width: 100px;
+}
+	input[type=radio] + label
+{
+		background: #999;
+		height: 42px;
+		width: 42px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+}
+	input[type=radio]:checked + label
+{
+		background: #0080FF;
+		height: 42px;
+		width: 42px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+}
+	.form-subtitle {
+		display:inline-block;
+		font-size: 18px;
+		font-weight: normal;
+}
+	input[type=number]{
+		height: 42px;
+		width: 76px;
+		background-color: #dedede;
+}
+	input[type=text]{
+		.input-text {
+			width: 100%;
+			background-color: #dedede;
+	}
+	}
+}
+//End pool_form
 .mainpicture{
 	background:url('/images/header_picture.jpg');
 	background-size:cover;
