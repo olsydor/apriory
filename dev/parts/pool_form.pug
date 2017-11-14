@@ -1,0 +1,70 @@
+doctype 
+html
+	head
+	body
+		form
+			.row.clearfix
+				.form_title Тип вашего обьекта<br>
+				.col-phablet-1-3
+					input(type="radio" value="" id="radio")
+					label(class="form-inline")
+					.form-subtitle  Жылой дом
+				.col-phablet-1-3
+					input(type="radio" value="" id="radio")
+					label(class="form-inline")
+					.form-subtitle  Общественное здание
+				.col-phablet-1-3
+					input(type="radio" value="" id="radio")
+					label(class="form-inline")
+					.form-subtitle  Сооружение
+			.row.clearfix
+				.form_title Параметры<br>
+				.col-phablet-1-3
+					label(class="form-inline" )
+					input(type="number" name="")
+					.form-subtitle Площадь
+				.col-phablet-1-3
+					label(class="form-inline")
+					input(type="number" autofocus maxlength="2" name="")
+					.form-subtitle Етаж
+				.col-phablet-1-3
+					label(class="form-inline")
+					input(type="number" class="no-spin" autofocus maxlength="2" name="")
+					.form-subtitle Высота этажа
+			.row.clearfix
+				.form_title Параметры проектирования<br>
+				.col-phablet-1-3
+					input(type="radio" value="")
+					label(class="form-inline")
+					.form-subtitle Новое строительство
+				.col-phablet-1-3
+					input(type="radio" value="")
+					label(class="form-inline")
+					.form-subtitle Реконструкция
+				.col-phablet-1-3
+					label(class="form-inline")
+					input(type="number" class="no-spin" autofocus maxlength="2" name="")
+					.form-subtitle Иное
+			.row.clearfix
+				.form_title Состав проектирования<br>
+				.col-phablet-1-2
+					label(class="form-inline")
+						input(type="number" autofocus maxlength="20" value="")
+						| Этаж 
+				.col-phablet-1-2
+					label(class="form-inline")
+						input(type="number" value="")
+						| АР.
+			.row.clearfix
+				.form_title Иные требования:<br>
+					label(class="form-inline")
+						input(type="text" class="input-text" autofocus maxlength="140" value="")
+			.row.clearfix
+					.col-phablet-1-2.col-tablet-1-3 
+						label(class="form-inline")
+							input(type="text" placeholder="Имя..." autofocus maxlength="20")
+					.col-phablet-1-2.col-tablet-1-3 
+						label(class="form-inline")
+							input(type="tel" pattern="\(\d\d\d\) ?\d\d\d-\d\d-\d\d" placeholder="Телефон...")
+					.col-phablet-1-4.col-phablet-1-2.col-tablet-1-3
+						a.btn.btn-application(href="") оставить заявку
