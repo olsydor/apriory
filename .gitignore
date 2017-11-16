@@ -1,6 +1,7 @@
 node_modules/
 package.json
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.psd
 
 app/
@@ -14,3 +15,9 @@ app/
 package.json
 app/*
 >>>>>>> origin
+=======
+*.psd
+app/
+app/*
+package-lock.json
+>>>>>>> 46679a02b2e785079b263589ffb07b0e8d4d5cc0

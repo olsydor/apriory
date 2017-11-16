@@ -32,11 +32,7 @@ gulp.task('html', function(){
   .pipe(gulp.dest('./app/'))
   gulp.src('./dev/js/*.js')
 	  .pipe(watch ('./dev/js/*.js'))
-<<<<<<< HEAD
 	  .pipe(gulp.dest('./app/js'));
-=======
-	  .pipe(gulp.dest('./app/js'))
->>>>>>> 625a09a390b03a82f60d996a9a60d1086abf2724
 });
 
 gulp.task('scss', function() {

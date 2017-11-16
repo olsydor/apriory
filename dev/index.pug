@@ -1,468 +1,67 @@
+doctype
 html
-	head
-		include ./parts/head.pug
-	body
-		.wrapper
-			.header
-				.header_contacts.put-right
-					ul
-						li
-							a.phones(href="tel:3512235317")
-								span (351) 
-								span 223-53-17
-						li
-							a.phones(href="tel:3512235316")
-								span (351)
-								span 223-53-16	
-						li
-							a.adress
-								|г. Челябинск,
-								br
-								|ул.Российская 224
-				img(src="images/apriory_logo.jpg")
-		.mainpicture
-			.buttons
-				a(href="#").btn.btn-services услуги
-				a(href="#").btn.btn-portfolio портфолио
-				br
-				.buttons-social
-					a(href="#")
-						span.icon.icon_fb
-				.buttons-social
-					a(href="#")
-						span.icon.icon_vk
-				.buttons-social
-					a(href="#")
-						span.icon.icon_tw
-		.wrapper
-			.section
-				.title НАШИ ПРЕИМУЩЕСТВА
-			img(src="../images/header_picture.jpg", alt="main")
-			.buttons
-				.btn.btn-services услуги
-				.btn.btn-portfolio портфолио
-			.buttons-social
-				span.icon.icon_fb
-				span.icon.icon_vk
-				span.icon.icon_tw
-		.wrapper
-			.title заказчики
-			.section
-		.wrapper
-			.title портфолио
-			.section.section_grey
-		.wrapper
-			.title опросный лист
-			include ./parts/pool_form.pug
-			.section
-			.title 
-				span НАШИ
-				span ПРЕИМУЩЕСТВА
-			.row.clearfix
-				.col-phablet-1-2.col-tablet-1-3
-					.advantages
-						span.advantages-title
-							span.advantages-title-num
-								|1000
-							span.advantages-title
-								|проектов за 
-						.years
-							span 7 
-							span.advantages-title
-								|лет!
-					.advantages-text
-						span Более 1000 проектов за 7 лет по всей России и СНГ
-				.col-phablet-1-2.col-tablet-1-3 
-					.advantages.advantages_cpo
-						span.advantages-title Допуск 
-						span.advanatges-cpo СРО
-					.advantages-text
-						span Имеется допуск генерального проектировщика СРО на работы по проектированию и обследованию. Ответственность компании застрахована на 10 000 000 руб.
-				.col-phablet-1-4.show-phablet
-				.col-phablet-1-2.col-tablet-1-3 
-					.advantages
-						span.advantages-customer
-							|крупные
-						span.advantages-title заказчики
-					.advantages-text
-						span Сбербанк, РЖД, Банки, правительственные структуры.
-		.wrapper
-			.header-menu
-				ul
-					li
-						a(href="#") 
-							span.icon.icon_house
-							br
-							span.menu-title ПРОЕКТИРОВАНИE
-					li
-						a(href="#") 
-							span.icon.icon_zoom
-							br
-							span.menu-title Обследование
-					li
-						a(href="#") 
-							span.icon.icon_radiator
-							br
-							span.menu-title Тепловизионное Обследование
-					li
-						a(href="#") 
-							span.icon.icon_palitra
-							br
-							span.menu-title Дизайн проекты
-					li
-						a(href="#") 
-							span.icon.icon_solarbat
-							br
-							span.menu-title Солнечные батареи
-					li
-						a(href="#") 
-							span.icon.icon_buildcar
-							br
-							span.menu-title Строительство
-			.wrapper_promotion
-				.promotion
-					span  Акція!
-				.promo__content
-					span Проект перепланировки в подарок!
-					span * ( при единовременном заказе боле чем на 50 000 р.) 
-		.section.section_grey.aplication
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-3 
-						input(type="text" name="name" placeholder="Имя...")
-					.col-phablet-1-2.col-tablet-1-3
-						input(type="text" name="phone" placeholder="Телефон...")
-					.col-phablet-1-4.col-mobileonly-1-4
-					.col-phablet-1-2.col-tablet-1-3
-						button.btn.btn-send(type='submit') Оставить заявку
-		.wrapper
-			.section.orders
-				.title заказчики
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/logocreator.jpg")
-					.col-phablet-1-2.col-tablet-1-5 
-						a(href="#")
-							img(src="/images/filmstyle.jpg")
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/eve_online.jpg")
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/fashion.jpg")
-					.col-phablet-1-4.show-phablet
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/intalk.jpg")
-		.row.clearfix
-          - 
-            var n = 0;
-            var titles = [
-              'Заголовок',
-              'Заголовок 2',
-              'Заголовок 3',
-              'Заголовок 4',
-              'Заголовок 5',
-              'Заголовок 6'
-            ];
-            var text = [
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию ',
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
-              'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию'
-            ];
-            var maintitle = [
-              'проетирования',
-              'ОБСЛЕДОВАНИЕ',
-              'перепланировок',
-              'ДИЗАЙН-ПРОЕКТЫ',
-              'планировок территории',
-              'СТРОИТЕЛЬСТВО'
-            ];
-            var texticon = [
-              'Прайс',
-              'Статьи',
-              'Заказать',
-              'ОТЗЫВЫ'
-            ];
-          .features
-          while n < 6
-            .feature(class="reature_"+n)
-              .wrrapper.clearfix
-                .feature__inner
-                  .feature__main
-                    a.feature__icons.clearfix
-                      .icon.icon-price
-                      .icon-title=texticon[0]
-                    a.feature__icons.clearfix
-                      .icon.icon-articles
-                      .icon-title=texticon[1]
-                    a.feature__icons.clearfix
-                      .icon.icon-order
-                      .icon-title=texticon[2]
-                    a.feature__icons.clearfix
-                      .icon.icon-reviews
-                      .icon-title=texticon[3]
-                    .feature__title.clearfix=titles[n]
-                    .feature__text=text[4]
-                .feature__inner
-                  .feature__main-title=maintitle[n]
-            -n++
-		.row.clearfix.portfolio_block
-				.wrapper
-					span.title_portfolio портфолио
-					.portfolio.clearfix
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_1.jpg")
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_2.jpg")
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_3.jpg")
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_4.jpg")
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_5.jpg")
-						.col-phablet-1-3
-							a(href="#")
-								img(src="/images/portfolio_6.jpg")
-		.wrapper
-			.section.orders
-				.title заказчики
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/logocreator.jpg")
-					.col-phablet-1-2.col-tablet-1-5 
-						a(href="#")
-							img(src="/images/filmstyle.jpg")
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/eve_online.jpg")
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/fashion.jpg")
-					.col-phablet-1-4.show-phablet
-					.col-phablet-1-2.col-tablet-1-5
-						a(href="#")
-							img(src="/images/intalk.jpg")
-			.section
-				.title 	ОПРОСНИЙ ЛИСТ
-				.row.clearfix
-					.col-phablet-1-3 Жилой дом
-					.col-phablet-1-3 Общестивиное здание
-					.col-phablet-1-3 Соорожение
-				.row.clearfix
-					.col-phablet-1-3 Площадь
-					.col-phablet-1-3 Етаж
-					.col-phablet-1-3 Висота етажа
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-3 
-						input(type="text" name="name" placeholder="Имя...")
-					.col-phablet-1-2.col-tablet-1-3
-						input(type="text" name="phone" placeholder="Телефон...")
-					.col-phablet-1-4
-					.col-phablet-1-2.col-tablet-1-3
-						button.btn.btn-send(type='submit') Оставить заявку
-		.row.clearfix
-			.section
-				.title Гарантии качественной работы
-				.wrapper.clearfix
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
-		.wraper__map
-			#map
-			.wrapper
-				.col-phablet-1-2.map
-					.contacts
-						.contacts__row
-							.contacts_title Телефон
-							.text 
-								span + 7 (359) 
-								span 223 53 17
-							.text 
-								span + 7 (359)
-								span 223 53 16
-						.contacts__row
-							.contacts_title Адрес
-							.text г. Челябинск, ул. Российская 224
-						.contacts__row
-							.contacts_title Прийом абонетново
-							.text 9:00 до 17:00, с ПН до ПТ
-		.wrapper
-			.wrapper_promotion
-				.promotion
-					span Акція!
-				.promo__content
-					span Проект перепланировки в подарок!
-					span * ( при единовременном заказе боле чем на 50 000 р.) 
-		.section.section_grey.aplication
-
-			.clearfix
-			.row.clearfix
-				.col-phablet-1-2.col-tablet-1-5 logo заказчиків
-				.col-phablet-1-2.col-tablet-1-5 logo заказчиків
-				.col-phablet-1-2.col-tablet-1-5 logo заказчиків
-				.col-phablet-1-2.col-tablet-1-5 logo заказчиків
-				.col-phablet-1-4.show-phablet
-				.col-phablet-1-2.col-tablet-1-5 logo заказчиків
-			.row.clearfix
-				.col-phablet-1-3 Жилой дом
-				.col-phablet-1-3 Общестивиное здание
-				.col-phablet-1-3 Соорожение
-			.row.clearfix
-				.col-phablet-1-3 Площадь
-				.col-phablet-1-3 Етаж
-				.col-phablet-1-3 Висота етажа
-			.row.clearfix
-				.col-phablet-1-2.col-tablet-1-3 Імя
-				.col-phablet-1-2.col-tablet-1-3 Телефон
-				.col-phablet-1-4
-				.col-phablet-1-2.col-tablet-1-3 Оставіть заявку
-			.row.clearfix
-				.col-phablet-1-2 гарантии качестинной роботи
-				.col-phablet-1-2 гарантии качестинной роботи
-			.row.clearfix
-				.col-phablet-1-2.col-tablet-1-3 
-					input(type="text" name="name" placeholder="Имя...")
-				.col-phablet-1-2.col-tablet-1-3
-					input(type="text" name="phone" placeholder="Телефон...")
-				.col-phablet-1-4
-				.col-phablet-1-2.col-tablet-1-3
-					button.btn.btn-send(type='submit') Оставить заявку
-		script(src="js/code.js")
-		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaO14uZAmmgy_VuPkiwBkDMlMTEtXpz9A&callback=initMap" async defer)
-
-
-.row.clearfix.portfolio_block
-        .wrapper
-            span.title_portfolio портфолио
-            .portfolio.clearfix
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_1.jpg")
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_2.jpg")
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_3.jpg")
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_4.jpg")
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_5.jpg")
-                .col-phablet-1-3
-                    a(href="#")
-                        img(src="/images/portfolio_6.jpg")
-.wrapper
-    //*.orders
-        .title заказчики
-    .title заказчики
-    .section
-        .row.clearfix
-            .col-phablet-1-2.col-tablet-1-5
-                a(href="#")
-                    img(src="/images/logocreator.jpg")
-            .col-phablet-1-2.col-tablet-1-5 
-                a(href="#")
-                    img(src="/images/filmstyle.jpg")
-            .col-phablet-1-2.col-tablet-1-5
-                a(href="#")
-                    img(src="/images/eve_online.jpg")
-            .col-phablet-1-2.col-tablet-1-5
-                a(href="#")
-                    img(src="/images/fashion.jpg")
-            .col-phablet-1-4.show-phablet
-            .col-phablet-1-2.col-tablet-1-5
-                a(href="#")
-                    img(src="/images/intalk.jpg")
-    .title 	ОПРОСНИЙ ЛИСТ
-    .section
-        .row.clearfix
-            .col-phablet-1-3 Жилой дом
-            .col-phablet-1-3 Общестивиное здание
-            .col-phablet-1-3 Соорожение
-        .row.clearfix
-            .col-phablet-1-3 Площадь
-            .col-phablet-1-3 Етаж
-            .col-phablet-1-3 Висота етажа
-        .row.clearfix
-            .col-phablet-1-2.col-tablet-1-3 
-                input(type="text" name="name" placeholder="Имя...")
-            .col-phablet-1-2.col-tablet-1-3
-                input(type="text" name="phone" placeholder="Телефон...")
-            .col-phablet-1-4
-            .col-phablet-1-2.col-tablet-1-3
-                button.btn.btn-send(type='submit') Оставить заявку
-.row.clearfix
-    //*.warranty
-        .title Гарантии качественной работы
-    .title Гарантии качественной работы
-    .section
-        .wrapper.clearfix
-            .col-phablet-1-2 гарантии качестинной роботи	
-            .col-phablet-1-2 гарантии качестинной роботи
-            .col-phablet-1-2 гарантии качестинной роботи	
-            .col-phablet-1-2 гарантии качестинной роботи
-            .col-phablet-1-2 гарантии качестинной роботи	
-            .col-phablet-1-2 гарантии качестинной роботи
-.wraper__map
-    #map
-    .wrapper
-        .col-phablet-1-2.map
-            .contacts
-                .contacts__row
-                    .contacts_title Телефон
-                    .text 
-                        span + 7 (359) 
-                        span 223 53 17
-                    .text 
-                        span + 7 (359)
-                        span 223 53 16
-                .contacts__row
-                    .contacts_title Адрес
-                    .text г. Челябинск, ул. Российская 224
-                .contacts__row
-                    .contacts_title Прийом абонетново
-                    .text 9:00 до 17:00, с ПН до ПТ
-.wrapper
-    .wrapper_promotion
-        .promotion
-            span Акція!
-        .promo__content
-            span Проект перепланировки в подарок!
-            span * ( при единовременном заказе боле чем на 50 000 р.) 
-    .col-phablet-1-2.col-tablet-1-3 
-        input(type="text" name="name" placeholder="Имя...")
-    .col-phablet-1-2.col-tablet-1-3
-        input(type="text" name="phone" placeholder="Телефон...")
-    .col-phablet-1-4
-    .col-phablet-1-2.col-tablet-1-3
-        button.btn.btn-send(type='submit') Оставить заявку
-script(src="js/code.js")
-script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaO14uZAmmgy_VuPkiwBkDMlMTEtXpz9A&callback=initMap" async defer)
-				.col-phablet-1-2.col-tablet-1-3 Оставіть заявкуу
-		.header
-				.application.clearfix
-					.wrapper
-						.col-phablet-1-2.col-tablet-1-3 
-							input(type="text" name="name" placeholder="Имя...")
-						.col-phablet-1-2.col-tablet-1-3
-							input(type="text" name="phone" placeholder="Телефон...")
-						.col-phablet-1-4
-						.col-phablet-1-2.col-tablet-1-3
-							button.btn.btn-send(type='submit') Оставить заявку
-		script(src="js/code.js")
-		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaO14uZAmmgy_VuPkiwBkDMlMTEtXpz9A&callback=initMap" async defer)
+  head
+    title apriori
+    meta(charset="utf8")
+    meta(meta name="viewport" content="width=device-width")
+    link(rel='stylesheet', href='css/style.css')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src="js/script.js")
+  body
+      .wrapper.clearfix
+        - 
+          var n = 0;
+          var titles = [
+            'Заголовок',
+            'Заголовок 2',
+            'Заголовок 3',
+            'Заголовок 4',
+            'Заголовок 5',
+            'Заголовок 6'
+          ];
+          var text = [
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию ',
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию',
+            'Давно выяснено что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому что тот обеспечивает более или менее стандартное заполнение шаблона а также реальное распределение букв и пробелов в абзацах которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию'
+          ];
+          var maintitle = [
+            'проетирования',
+            'ОБСЛЕДОВАНИЕ',
+            'перепланировок',
+            'ДИЗАЙН-ПРОЕКТЫ',
+            'планировок территории',
+            'СТРОИТЕЛЬСТВО'
+          ];
+          var texticon = [
+            'Прайс',
+            'Статьи',
+            'Заказать',
+            'ОТЗЫВЫ'
+          ];
+        .features
+        while n < 6
+          .feature(class="reature_"+n)
+            .wrapper.clearfix
+              .feature__inner
+                .feature__main
+                  a.feature__icons.clearfix
+                    .icon.icon-price
+                    .icon-title=texticon[0]
+                  a.feature__icons.clearfix
+                    .icon.icon-articles
+                    .icon-title=texticon[1]
+                  a.feature__icons.clearfix
+                    .icon.icon-order
+                    .icon-title=texticon[2]
+                  a.feature__icons.clearfix
+                    .icon.icon-reviews
+                    .icon-title=texticon[3]
+                  .feature__title.clearfix=titles[n]
+                  .feature__text=text[4]
+              .feature__inner
+                .feature__main-title=maintitle[n]
+          -n++
