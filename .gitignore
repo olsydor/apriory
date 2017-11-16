@@ -2,17 +2,16 @@ node_modules/
 package.json
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cef156a7618542d4e9b4c95a8782f13cdd5be2f9
 *.psd
-
 app/
 app/*
-
 package-lock.json
-=======
-dev.zip
-*.psd
-app/
+gulpfile.js
 package.json
+<<<<<<< HEAD
 app/*
 >>>>>>> origin
 =======
@@ -21,3 +20,7 @@ app/
 app/*
 package-lock.json
 >>>>>>> 46679a02b2e785079b263589ffb07b0e8d4d5cc0
+=======
+.gitignore
+
+>>>>>>> cef156a7618542d4e9b4c95a8782f13cdd5be2f9
