@@ -378,13 +378,8 @@ form {
 	}
 }
 .buttons{
-	// margin:auto;
 	font-size:0px;
 	@include breakpoint(phablet){
-	  // position: absolute;
-    // margin: -102px -280px 0px 0;
-    // top: 83%;
-    // right: 50%;
     font-size: 0px;
 	}
 }
@@ -418,6 +413,10 @@ form {
 		padding:20px;
 		display:inline-block;
 		background:#4b9bf0;
+		border-radius:5px;
+		@include breakpoint(phablet){
+		border-radius:0 5px 5px 0;
+		}
 	}
 	&-services{
 		min-width:280px;
@@ -426,6 +425,10 @@ form {
 		padding:20px;
 		display:inline-block;
 		background:#f52556;
+		border-radius:5px;
+		@include breakpoint(phablet){
+		border-radius:5px 0 0 5px;
+		}
 	}
 }
 @media (min-width:800px){
