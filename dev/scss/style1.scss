@@ -147,10 +147,8 @@
 // }
 
 .feature{
-	height:100vh;
-	background-size:cover;
-	
-	
+  height:75vh;
+  background-size:cover;
     &:nth-child(even){
       .maintitle{
         background: #52a2f7; /* Old browsers */
@@ -203,6 +201,7 @@
   }
   .content{
     text-align:center;
+    margin-top: 30px;
   }
   .icon_wrapper{
     margin: 0 auto;
@@ -221,6 +220,15 @@
   span{
     text-transform:uppercase;
     font-size:12px;
+  }
+  .title{
+    font-size:20px;
+    padding:50px 0 20px 0 ;
+  }
+  p{
+    padding:10px;
+    text-align:justify;
+    font-size:13px;
   }
 }
 .feature{
@@ -255,5 +263,5 @@
 
   .feature_5{
     background: url(../images/bg-6.png);
-  }
+  }  
 }
