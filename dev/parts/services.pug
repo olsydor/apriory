@@ -4,6 +4,7 @@
 - var icons =["p","pictext","envelope","people"], anchor=["projection","survey","replaning","design projection","territory planing","building"];
 	while n < 6
 		.feature(class="feature_"+n,id=anchor[n])
+			.wrapper
 				.row.clearfix
 					.col-tablet-1-2
 						.maintitle=maintitle[n]
@@ -15,6 +16,6 @@
 									.icon_wrapper
 										.icon(class="icon_"+icons[i])
 									span.icon_text=item
-				.title=titles[n]
+						.title=titles[n]
 						p=text[n]
 		- n++
