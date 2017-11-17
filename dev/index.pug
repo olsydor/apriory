@@ -21,9 +21,9 @@ html
 								|ул.Российская 224
 				img(src="images/apriory_logo.jpg")
 		.mainpicture
-			.buttons
+			.buttons(id="butt")
 				a(href="#").btn.btn-services услуги
-				a(href="#").btn.btn-portfolio портфолио
+				a(href="#portfolio").btn.btn-portfolio портфолио
 				br
 				.buttons-social
 					a(href="#")
@@ -110,31 +110,44 @@ html
 					.col-phablet-1-2.col-tablet-1-5
 						a(href="#")
 							img(src="/images/intalk.jpg")
-
-		
 		.row.clearfix.portfolio_block
 				.wrapper
-					span.title_portfolio портфолио
+					span.title_portfolio(id="portfolio") портфолио
 					.portfolio.clearfix
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g1",href="images/portfolio_1_1.jpg",alt="картинка")
 								img(src="/images/portfolio_1.jpg")
+							a(data-fancybox="g1", href='/images/portfolio_1_2.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_3.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_4.jpg')
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g2",href='/images/portfolio_2_1.jpg',alt="картинка")
 								img(src="/images/portfolio_2.jpg")
+							a(data-fancybox="g2", href='/images/portfolio_2_2.jpg')
+							a(data-fancybox="g2", href='/images/portfolio_2_3.jpg')
+							a(data-fancybox="g2", href='/images/portfolio_2_4.jpg')
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g1",href="images/portfolio_1_1.jpg",alt="картинка")
 								img(src="/images/portfolio_3.jpg")
+							a(data-fancybox="g1", href='/images/portfolio_1_2.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_3.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_4.jpg')
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g1",href="images/portfolio_1_1.jpg",alt="картинка")
 								img(src="/images/portfolio_4.jpg")
+							a(data-fancybox="g1", href='/images/portfolio_1_2.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_3.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_4.jpg')
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g1",href="images/portfolio_1_1.jpg",alt="картинка")
 								img(src="/images/portfolio_5.jpg")
 						.col-phablet-1-3
-							a(href="#")
+							a(data-fancybox="g1",href="images/portfolio_1_1.jpg",alt="картинка")
 								img(src="/images/portfolio_6.jpg")
-		.section.orders
+							a(data-fancybox="g1", href='/images/portfolio_1_2.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_3.jpg')
+							a(data-fancybox="g1", href='/images/portfolio_1_4.jpg')
+		.section
 			.wrapper
 				.title заказчики
 				.row.clearfix
@@ -154,25 +167,10 @@ html
 					.col-phablet-1-2.col-tablet-1-5
 						a(href="#")
 							img(src="/images/intalk.jpg")
-		.section
+		.section_grey
 			.wrapper
 				.title 	ОПРОСНИЙ ЛИСТ
-				.row.clearfix
-					.col-phablet-1-3 Жилой дом
-					.col-phablet-1-3 Общестивиное здание
-					.col-phablet-1-3 Соорожение
-				.row.clearfix
-					.col-phablet-1-3 Площадь
-					.col-phablet-1-3 Етаж
-					.col-phablet-1-3 Висота етажа
-				.row.clearfix
-					.col-phablet-1-2.col-tablet-1-3 
-						input(type="text" name="name" placeholder="Имя...")
-					.col-phablet-1-2.col-tablet-1-3
-						input(type="text" name="phone" placeholder="Телефон...")
-					.col-phablet-1-4
-					.col-phablet-1-2.col-tablet-1-3
-						button.btn.btn-send(type='submit') Оставить заявку
+				include ./parts/pool_form.pug
 		.section
 			.wrapper
 				.title Гарантии качественной работы
@@ -200,13 +198,13 @@ html
 							.contacts_title Адрес
 							.text г. Челябинск, ул. Российская 224
 						.contacts__row
-							.contacts_title Прийом абонетново
+							.contacts_title Прийом абонетнов
 							.text 9:00 до 17:00, с ПН до ПТ
 		.section_promotion.bottom
 			.wrapper
 				.wrapper_promotion
 					.promotion
-						span Акція!
+						span Акция!
 					.promo__content
 						span Проект перепланировки в подарок!
 						span * ( при единовременном заказе боле чем на 50 000 р.) 
