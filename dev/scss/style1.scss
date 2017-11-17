@@ -6,12 +6,14 @@
      @media (min-width: 64em) { @content ; }
   }
     @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
   }
    @else if $point == phablet {
      @media (min-width: 37.5em)  { @content ; }
   }
   @else if $point == mobileonly {
      @media (max-width: 37.5em)  { @content ; }
+
   }
 }
 // .feature{
@@ -145,8 +147,10 @@
 // }
 
 .feature{
-  height:100vh;
-  background-size:cover;
+	height:100vh;
+	background-size:cover;
+	
+	
     &:nth-child(even){
       .maintitle{
         background: #52a2f7; /* Old browsers */
@@ -182,6 +186,13 @@
     display: inline-block;
     vertical-align: bottom;
     text-align:center;
+	
+	  a{
+		text-decoration: none;
+		color: black;
+		
+	  }
+	
   }
   .icon{
     text-align:center;
@@ -202,13 +213,26 @@
   }
   .icon_text{
     width:61px;
+	margin-top: 10px;
+	  display: inline-block;
+	
+	
   }
   span{
     text-transform:uppercase;
     font-size:12px;
   }
 }
+.feature{
+	@include breakpoint(tablet){
+		height: 750px;
+	}
+		
+}
 @include breakpoint(tablet){
+	.feature{
+		height: 750px;
+	}
   .feature_0{
     background: url(../images/bg-1.png);
   }
