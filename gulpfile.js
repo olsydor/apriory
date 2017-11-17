@@ -1,12 +1,13 @@
 var gulp 			= require('gulp'),
-	pug 			= require('gulp-pug'),
+	pug 		  	= require('gulp-pug'),
 	autoprefixer 	= require('gulp-autoprefixer'),
-  scss			= require('gulp-sass'),
-	browserSync 	= require("browser-sync"),
+  scss			  = require('gulp-sass'),
+	browserSync = require("browser-sync"),
 	reload 			= browserSync.reload,
- 	server     		= require('gulp-server-livereload'),
+ 	server     	= require('gulp-server-livereload'),
  	watch 			= require('gulp-watch');
  	cleancss 		= require('gulp-cleancss');
+  plumber     = require('gulp-plumber');
 var livereloadPort 	= 37729;
 
 
@@ -19,7 +20,8 @@ gulp.task('webserver', function() {
       enable: true,
       port: livereloadPort
       }
-    }));
+    }))
+    .pipe(plumber())
     console.log(livereloadPort)
 });
 
@@ -32,25 +34,28 @@ gulp.task('html', function(){
   .pipe(gulp.dest('./app/'))
   gulp.src('./dev/js/*.js')
 	  .pipe(watch ('./dev/js/*.js'))
-	  .pipe(gulp.dest('./app/js'));
+    .pipe(plumber())
+	  .pipe(gulp.dest('./app/js'))
 });
 
 gulp.task('scss', function() {
 	gulp.src('./dev/scss/*.scss')
 	.pipe(watch('./dev/scss/*.scss'))
-		.pipe(scss())
-		.pipe(gulp.dest('./app/css/'));
-
+  .pipe(plumber())
+	.pipe(scss())
+	.pipe(gulp.dest('./app/css/'))
 });
 
 gulp.task('images', function() {
     gulp.src('./dev/images/*')
     .pipe(watch('./dev/images/*'))
+    .pipe(plumber())
     .pipe(gulp.dest('./app/images/'))
 });
 gulp.task('fonts', function() {
     gulp.src('./dev/fonts/*')
     .pipe(watch('./dev/fonts/*'))
+    .pipe(plumber())
     .pipe(gulp.dest('./app/fonts/'))
 });
 

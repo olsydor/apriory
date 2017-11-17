@@ -18,38 +18,27 @@
 @font-face {
 			font-family: "MyriadProRegular";
 			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
-			src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-			url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-			url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
 			font-style: normal;
 			font-weight: normal;
 	}
 
   @font-face {
-      font-family: 'sansationbold';
-      src: url('../font/sansation/sansation-bold-webfont.eot');
-      src: url('../font/sansation/sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../font/sansation/sansation-bold-webfont.woff2') format('woff2'),
-           url('../font/sansation/sansation-bold-webfont.woff') format('woff'),
-           url('../font/sansation/sansation-bold-webfont.ttf') format('truetype');
+      font-family: 'Sansation-Bold';
+      src: url('../fonts/sansation-bold.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
 
   }
 
   @font-face {
-      font-family: 'sansationregular';
-      src: url('../font/sansation/sansation-regular-webfont.eot');
-      src: url('../font/sansation/sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../font/sansation/sansation-regular-webfont.woff2') format('woff2'),
-           url('../font/sansation/sansation-regular-webfont.woff') format('woff'),
-           url('../font/sansation/sansation-regular-webfont.ttf') format('truetype');
+      font-family: 'Sansation-Regular';
+      src: url('../fonts/sansation-regular.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
   }
 
 *{
-	font-family: 'sansationregular';
+	font-family: 'Sansation-Regular';
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -61,8 +50,7 @@
  	max-width: 100%;
  }
 body{
-	overflow-x: hidden;
-    font-family: 'sansationregular';
+  font-family: 'Sansation-Regular';
 }
 // start header top line
 .header{
@@ -306,6 +294,73 @@ input{
 		font-size:22px;
 		padding:15px 51px 10px 15px;
 }
+//Start pool_form
+form {
+	text-transform: uppercase;
+	text-align: justify;
+	
+	input[type=radio] {
+		display:none;
+}
+	.form-title{
+		font-size: 19px;
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	//Line
+	.form-title:after,{
+	    display: inline-block;
+	    margin: 16px 0 16px 0;
+	    height: 1px;
+	    content: " ";
+	    text-shadow: none;
+	    background-color: #d0d0d0;
+	    width: 100%;
+}
+	input[type=radio] + label
+{
+		background: #dedede;
+		height: 42px;
+		width: 42px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		border: 1px solid #cfcfcf;
+		margin: 4px 18 4px -10px;
+		vertical-align: middle;
+}
+	input[type=radio]:checked + label
+{
+		background: #a29f9f;
+		height: 42px;
+		width: 42px;
+		display:inline-block;
+		padding: 0 0 0 0px;
+		border: 1px solid #cfcfcf;
+		margin: 4px 18 4px -10px;
+		vertical-align: middle;
+}
+	.form-subtitle {
+		display:inline-block;
+		font-size: 18px;
+		font-weight: normal;
+}
+	.input-text-changes{
+		height: 42px;
+		width: 76px;
+		background-color: #dedede;
+}
+	.input-text {
+			height: 42px;
+			width: 100%;
+			color: #dedede;
+			vertical-align: middle;
+			padding: 0 10px;
+			background-color: #dedede;
+	}
+	input[type=text]{
+	}
+}
+//End pool_form
 .mainpicture{
 	background:url('/images/header_picture.jpg');
 	background-size:cover;
@@ -322,13 +377,8 @@ input{
 	}
 }
 .buttons{
-	// margin:auto;
 	font-size:0px;
 	@include breakpoint(phablet){
-	  // position: absolute;
-    // margin: -102px -280px 0px 0;
-    // top: 83%;
-    // right: 50%;
     font-size: 0px;
 	}
 }
@@ -362,6 +412,10 @@ input{
 		padding:20px;
 		display:inline-block;
 		background:#4b9bf0;
+		border-radius:5px;
+		@include breakpoint(phablet){
+		border-radius:0 5px 5px 0;
+		}
 	}
 	&-services{
 		min-width:280px;
@@ -370,6 +424,10 @@ input{
 		padding:20px;
 		display:inline-block;
 		background:#f52556;
+		border-radius:5px;
+		@include breakpoint(phablet){
+		border-radius:5px 0 0 5px;
+		}
 	}
 }
 @media (min-width:800px){

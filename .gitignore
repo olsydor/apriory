@@ -4,3 +4,7 @@ package.json
 app/
 app/*
 package-lock.json
+gulpfile.js
+package.json
+.gitignore
+
