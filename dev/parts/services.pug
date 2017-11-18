@@ -4,9 +4,10 @@
 - var icons =["p","pictext","envelope","people"], anchor=["projection","survey","replaning","design projection","territory planing","building"];
 	while n < 6
 		.feature(class="feature_"+n,id=anchor[n])
-			.wrapper
-				.row.clearfix
-					.col-tablet-1-2.maintitle=maintitle[n]
+			.row.clearfix
+				.col-tablet-1-2.maintitle
+					.wrapper=maintitle[n]
+				.wrapper
 					.col-tablet-1-2.content
 						.row.clearfix
 						each item, i in texticon
