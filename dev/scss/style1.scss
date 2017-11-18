@@ -21,13 +21,14 @@
     margin-bottom:-10px;
 }
 .feature{
-  height:75vh;
   overflow:hidden;
   background-size:cover;
     &:nth-child(even){
       .maintitle{
-        background: linear-gradient(to right, rgba(82,162,247,0.15) 0%,rgba(82,162,247,1) 28%,rgba(82,162,247,1) 100%);
-      }
+        background:#52a2f7;
+        @include breakpoint(tablet){
+          background: linear-gradient(to right, rgba(82,162,247,0.15) 0%,rgba(82,162,247,1) 28%,rgba(82,162,247,1) 100%);
+        }              }
       .icon_wrapper{
         background-color:#52a2f7;
         border-radius:50%;
@@ -36,9 +37,12 @@
       }
     }
     &:nth-child(odd){
-      .maintitle{
-        background: linear-gradient(to right, rgba(99,189,18,1) 0%,rgba(99,189,18,1) 75%,rgba(99,189,18,0.15) 100%);
-      }   
+        .maintitle{
+            background:#63bd12;
+            @include breakpoint(tablet){
+                background: linear-gradient(to right, rgba(99,189,18,1) 0%,rgba(99,189,18,1) 75%,rgba(99,189,18,0.15) 100%);
+            }
+        }   
     }
   .maintitle{
     text-align:center;
