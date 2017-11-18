@@ -16,13 +16,17 @@
 
   }
 }
+.services{
+    padding:50px 0 0 0;
+    margin-bottom:-10px;
+}
 .feature{
   height:75vh;
   overflow:hidden;
   background-size:cover;
     &:nth-child(even){
       .maintitle{
-        background:#52a2f7;
+        background: linear-gradient(to right, rgba(82,162,247,0.15) 0%,rgba(82,162,247,1) 28%,rgba(82,162,247,1) 100%);
       }
       .icon_wrapper{
         background-color:#52a2f7;
@@ -33,7 +37,7 @@
     }
     &:nth-child(odd){
       .maintitle{
-        background:#63bd12;
+        background: linear-gradient(to right, rgba(99,189,18,1) 0%,rgba(99,189,18,1) 75%,rgba(99,189,18,0.15) 100%);
       }   
     }
   .maintitle{
@@ -117,13 +121,13 @@
             z-index:1;
         }
         &:nth-child(even){
-            .maintitle{
+            .col-tablet-1-2{
                 float:right;
             }
             .content{
                 float:left;
-                padding-top:40px;
-                padding-right:100px;
+                padding-top:52px;
+                padding-right:36px;
             }
             &:before{
               right:50%;
@@ -135,8 +139,8 @@
         }
         &:nth-child(odd){
             .content{
-                padding-top:40px;
-                padding-left:100px;
+                padding-top:52px;
+                padding-left:36px;
             }
         }
         .title{

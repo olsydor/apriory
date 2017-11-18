@@ -67,13 +67,13 @@ html
 							span Сбербанк, РЖД, Банки, правительственные структуры.
 		.section
 			.wrapper
-				.header-menu
+				.header-menu(id="menu-butt")
 					include ./parts/header_menu.pug
 		.section_promotion
 			.wrapper
 				.wrapper_promotion
 					.promotion
-						span  Акція!
+						span  Акция!
 					.promo__content
 						span Проект перепланировки в подарок!
 						span * ( при единовременном заказе боле чем на 50 000 р.) 
@@ -107,7 +107,7 @@ html
 					.col-phablet-1-2.col-tablet-1-5
 						a(href="#")
 							img(src="/images/intalk.jpg")
-		.section
+		.section.services
 			include parts/services.pug
 		.row.clearfix.portfolio_block
 				.wrapper

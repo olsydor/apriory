@@ -4,38 +4,38 @@
 		{
 			icon: 'icon_house',
 			text: 'ПРОЕКТИРОВАНИЕ',
-			href: '#'
+			href: '#projection'
 		},
 		{
 			icon: 'icon_zoom',
 			text: 'Обследование',
-			href: '#2'
+			href: '#survey'
 		},
 		{
 			icon: 'icon_radiator',
 			text: 'Тепловизионное Обследование',
-			href: '#2'
+			href: '#replaning'
 		},
 		{
 			icon: 'icon_palitra',
 			text: 'Дизайн проекты',
-			href: '#3'
+			href: '#design_projection'
 		},
 		{
 			icon: 'icon_solarbat',
 			text: 'Солнечные батареи',
-			href: '#'
+			href: '#territory_planing'
 		},
 		{
 			icon: 'icon_buildcar',
 			text: 'Строительство',
-			href: '#'
+			href: '#building'
 		},
 	]
 ul
 	each item in menu
 		li 
-			a(href="#")
+			a(href=item.href)
 				span.icon(class=item.icon)
 				br 
 				span.menu-title #{item.text}
