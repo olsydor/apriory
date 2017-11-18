@@ -6,8 +6,7 @@
 		.feature(class="feature_"+n,id=anchor[n])
 			.wrapper
 				.row.clearfix
-					.col-tablet-1-2
-						.maintitle=maintitle[n]
+					.col-tablet-1-2.maintitle=maintitle[n]
 					.col-tablet-1-2.content
 						.row.clearfix
 						each item, i in texticon
@@ -17,8 +16,8 @@
 										.icon(class="icon_"+icons[i])
 									span.icon_text=item
 						.title=titles[n]
-						p=text[n]
-						p.details.clearfix(id="det_"+n)=text[n]
+						p(class="short_"+n)=text[n]
+						p.details(id="det_"+n)=text[n]
 						a.show(id="show_"+n) Більше
 						a.hide(id="hide_"+n) Приховати
 		- n++

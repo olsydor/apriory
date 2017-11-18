@@ -12,71 +12,90 @@ function initMap() {
 	});	
 }
 $(document).ready(function(){
+	
+	
+	
 	$('#show_0').click(function(){
-		$("#det_0").slideDown(1000);
+		$(".short_0").hide()
+		$("#det_0").show()
 		$(this).hide()
 		$("#hide_0").show()	
 	});
 	$('#hide_0').click(function(){
-		$("#det_0").slideUp(1000);
+		$("#det_0").hide()
 		$(this).hide()
-		$("#show_0").show()	
+		$("#show_0").show()
+		$(".short_0").show()
 	});
 	
 	$('#show_1').click(function(){
-		$("#det_1").slideDown(1000);
+		$(".short_1").hide()
+		$("#det_1").show()
 		$(this).hide()
-		$("#hide_1").show()		
+		$("#hide_1").show()	
 	});
 	$('#hide_1').click(function(){
-		$("#det_1").slideUp(1000);
+		$("#det_1").hide()
 		$(this).hide()
-		$("#show_1").show()	
+		$("#show_1").show()
+		$(".short_1").show()
 	});
 	
 	$('#show_2').click(function(){
-		$("#det_2").slideDown(1000);
+		$(".short_2").hide()
+		$("#det_2").show()
 		$(this).hide()
 		$("#hide_2").show()	
 	});
 	$('#hide_2').click(function(){
-		$("#det_2").slideUp(1000);
+		$("#det_2").hide()
 		$(this).hide()
 		$("#show_2").show()
+		$(".short_2").show()
 	});
 	
 	$('#show_3').click(function(){
-		$("#det_3").slideDown(1000);
+		$(".short_3").hide()
+		$("#det_3").show()
 		$(this).hide()
 		$("#hide_3").show()	
 	});
 	$('#hide_3').click(function(){
-		$("#det_3").slideUp(1000);
+		$("#det_3").hide()
 		$(this).hide()
 		$("#show_3").show()
-		
+		$(".short_3").show()
 	});
+
 	$('#show_4').click(function(){
-		$("#det_4").slideDown(1000);
+		$(".short_4").hide()
+		$("#det_4").show()
 		$(this).hide()
-		$("#hide_4").show()
+		$("#hide_4").show()	
 	});
 	$('#hide_4').click(function(){
-		$("#det_4").slideUp(1000);
+		$("#det_4").hide()
 		$(this).hide()
 		$("#show_4").show()
-		
+		$(".short_4").show()
 	});
+
 	$('#show_5').click(function(){
-		$("#det_5").slideDown(1000);
+		$(".short_5").hide()
+		$("#det_5").show()
 		$(this).hide()
-		$("#hide_4").show()
-		
+		$("#hide_5").show()	
 	});
 	$('#hide_5').click(function(){
-		$("#det_5").slideUp(1000);
+		$("#det_5").hide()
 		$(this).hide()
 		$("#show_5").show()
-		
+		$(".short_5").show()
 	});
+	
+	
+	
+	
+	
+	
 });
