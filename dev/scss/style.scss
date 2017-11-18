@@ -339,6 +339,9 @@ form {
 		margin: 4px 18 4px -10px;
 		vertical-align: middle;
 }
+	input[type=radio] + span {
+  		color: #78a025;
+}
 	.form-subtitle {
 		display:inline-block;
 		font-size: 18px;
