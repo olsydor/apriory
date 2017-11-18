@@ -13,8 +13,6 @@ function initMap() {
 }
 $(document).ready(function(){
 	
-	
-	
 	$('#show_0').click(function(){
 		$(".short_0").hide()
 		$("#det_0").show()
