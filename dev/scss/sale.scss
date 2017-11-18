@@ -1,0 +1,113 @@
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+}
+.wrapper_promotion{
+	margin:0 -10px;
+}
+.promotion{
+	display: block;
+	text-align: center;
+	background: #f52556;
+	font-size: 27px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.promo__content{
+	display: block;
+	text-align: center;
+	background: #52a2f7;
+	font-weight: bold;
+	padding: 10px 10px 22px 10px;
+	span{
+		&:first-child{
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		&:last-child{
+			font-size: 14px;
+			color: #f3f8fe;
+		}
+	}
+}
+@include breakpoint(phablet){
+	.wrapper_promotion{
+		position: relative;
+		//top: 12px;
+		.promotion{
+			display: inline-block;
+			background: #f52556;
+			padding: 20px 25px 20px 20px;
+			position: relative;
+			font-weight: bold;
+			span{
+				display: inline;
+				font-size: 47px;
+				color: #ffffff;
+
+			}
+			&:before{
+				content:'';
+				position:absolute;
+				top:0;
+				bottom: 0;
+				background: #f52556;
+				width:3000px;
+				right:100%;	
+			}	
+		}
+		.promo__content{
+			background: #52a2f7;
+			display: inline-block;
+			padding: 25px 0 25px 10px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			//overflow: hidden;
+			&:before{
+				content:'';
+				position:absolute;
+				top:0;
+				bottom: 0;
+				background: #52a2f7;
+				width:3000px;
+				left:100%;	
+			}	
+			span{
+				&:first-child{
+					font-size: 18px;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+				&:last-child{
+					font-size: 14px;
+					color: #f3f8fe;
+				}
+			}
+		}
+		@media (max-width:897px){
+			.promo__content{
+				padding: 15px 0 15px 10px;
+				text-align: center;
+			}
+		}
+
+	}
+
+
+}

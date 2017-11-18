@@ -1,0 +1,41 @@
+-
+	var menu=
+	[		
+		{
+			icon: 'icon_house',
+			text: 'ПРОЕКТИРОВАНИЕ',
+			href: '#projection'
+		},
+		{
+			icon: 'icon_zoom',
+			text: 'Обследование',
+			href: '#survey'
+		},
+		{
+			icon: 'icon_radiator',
+			text: 'Тепловизионное Обследование',
+			href: '#replaning'
+		},
+		{
+			icon: 'icon_palitra',
+			text: 'Дизайн проекты',
+			href: '#design_projection'
+		},
+		{
+			icon: 'icon_solarbat',
+			text: 'Солнечные батареи',
+			href: '#territory_planing'
+		},
+		{
+			icon: 'icon_buildcar',
+			text: 'Строительство',
+			href: '#building'
+		},
+	]
+ul
+	each item in menu
+		li 
+			a(href=item.href)
+				span.icon(class=item.icon)
+				br 
+				span.menu-title #{item.text}
