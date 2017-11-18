@@ -71,7 +71,7 @@
 			padding-top: 30px;
 			position:relative;
 			z-index:2;
-			.short_0,.short_1,.short_2.short_3,.short_4,.short_5,{
+			&.short_0,&.short_1,&.short_2,&.short_3,&.short_4,&.short_5,{
 				max-height: 100px;
 				overflow: hidden;
 			}	
