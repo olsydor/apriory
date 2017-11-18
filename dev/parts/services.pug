@@ -18,4 +18,7 @@
 									span.icon_text=item
 						.title=titles[n]
 						p=text[n]
+						p.details.clearfix(id="det_"+n)=text[n]
+						a.show(id="show_"+n) Більше
+						a.hide(id="hide_"+n) Приховати
 		- n++
