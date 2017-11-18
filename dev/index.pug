@@ -173,13 +173,15 @@ html
 		.section
 			.wrapper
 				.title Гарантии качественной работы
-				.clearfix.row
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
-					.col-phablet-1-2 гарантии качестинной роботи	
-					.col-phablet-1-2 гарантии качестинной роботи
+				-var labels = ['my label text 1', 'asd ds fdsaf','asdfdasfds', 'sdaf dsafdsa', 'sadfdsfdsfds']
+				.row.clearfix
+					each label in labels
+						.col-tablet-1-2.label-wrap
+							.label
+								.label__icon
+									span
+								.label__text
+									| #{label}
 		.wraper__map
 			#map
 			.wrapper
