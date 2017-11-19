@@ -12,7 +12,6 @@ function initMap() {
 	});	
 }
 $(document).ready(function(){
-
 	$("#show_0").click(function(){
 		$(this).hide();
 		$("#dot_0").css({'max-height': '1000px',
