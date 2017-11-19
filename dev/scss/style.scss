@@ -15,43 +15,36 @@
 
   }
 }
-@font-face {
-			font-family: "MyriadProRegular";
-			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
-			font-style: normal;
-			font-weight: normal;
+	@font-face {
+		font-family: 'Sansation-Bold';
+		src: url('../fonts/sansation-bold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
 	}
 
-  @font-face {
-      font-family: 'Sansation-Bold';
-      src: url('../fonts/sansation-bold.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-
-  }
-
-  @font-face {
-      font-family: 'Sansation-Regular';
-      src: url('../fonts/sansation-regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'Sansation-Regular';
+		src: url('../fonts/sansation-regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
 
 *{
 	font-family: 'Sansation-Regular';
 	margin: 0;
 	padding: 0;
 	border: 0;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; 
     box-sizing: border-box;
- 	}
- img{
- 	max-width: 100%;
- }
-body{
-  font-family: 'Sansation-Regular';
 }
+
+img{
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Sansation-Regular';
+}
+
 // start header top line
 .header{
 	text-align: center;
@@ -104,43 +97,34 @@ body{
 	&_promotion{
 		overflow: hidden;
 		margin-bottom: -12px;
-		&.bottom{
-			margin-top: 12px;
-		}
-		
+		padding-bottom:0;
+	}
+	&_orders{
+		padding-top:0;
+		text-align:center;
 	}
 }
 .section_grey{
-	padding:30px 0 30px 0;
 	background-color: #ededed;
 	overflow: hidden;
 }	
-.title{
- text-align:center;
-  text-transform:uppercase;
-  font-size:41px;
-  font-weight:bold;
-  span{
-    color:red;
-  }
-}	
 .input{
-  width: 287px;
-  height: 50px;
-  font-size: 22px;
-  padding-left: 18px;
-  margin-right: 45px;
-  color: #c0c0c0;
+	width: 287px;
+	height: 50px;
+	font-size: 22px;
+	padding-left: 18px;
+	margin-right: 45px;
+	color: #c0c0c0;
 }
 .pool_title{
 
 }
 .checkbox input:before {
-  content: '';
-  background: #fff;
-  display: block;
-  width: 10px;
-  height: 10px;
+	content: '';
+	background: #fff;
+	display: block;
+	width: 10px;
+	height: 10px;
 }
 ::-webkit-input-placeholder { /* Chrome */
   color: #c0c0c0;
@@ -194,26 +178,29 @@ body{
 	span:nth-child(2){
 		position:absolute;
 		top:55%;
-		right:-45%; 
+		right:-56%; 
 	}
 }
 .advantages-text{
 	border-top: 1px solid #929292;
-	padding-top:10px;
+	padding:10px;
 	color:#929292;
-	font-size:18px;
+	font-size:13px;
 	font-style:none;
+	@include breakpoint(phablet){
+		font-size:18px;
+	}
 }
 @media (min-width:600px){
 	.years{
 		span:first-child{
-		font-size:100.8px;
+			font-size:100.8px;
 		}
 		span:nth-child(2) {
-    position: absolute;
-    top: 55%;
-    right: -46%;
-  	}
+			position: absolute;
+			top: 55%;
+    		right: -56%;
+  		}
 	}
 	.advantages-title-num{
 		font-size:70.2px;
@@ -259,8 +246,7 @@ body{
 		text-align: center;
 		width:200px;
 		vertical-align:top;
-		margin-right: 15px;
-		margin-top:15px;
+		margin:30px 0;
 		@include breakpoint(phablet){
 			width:130px;
 			max-width:200px;
@@ -301,7 +287,7 @@ form {
 	
 	input[type=radio] {
 		display:none;
-}
+	}
 	.form-title{
 		font-size: 19px;
 		font-weight: bold;
@@ -309,16 +295,16 @@ form {
 	}
 	//Line
 	.form-title:after,{
-	    display: inline-block;
-	    margin: 16px 0 16px 0;
-	    height: 1px;
-	    content: " ";
-	    text-shadow: none;
-	    background-color: #d0d0d0;
-	    width: 100%;
-}
+		display: inline-block;
+		margin: 16px 0 16px 0;
+		height: 1px;
+		content: " ";
+		text-shadow: none;
+		background-color: #d0d0d0;
+		width: 100%;
+	}
 	input[type=radio] + label
-{
+	{
 		background: #dedede;
 		height: 42px;
 		width: 42px;
@@ -327,9 +313,9 @@ form {
 		border: 1px solid #cfcfcf;
 		margin: 4px 18 4px -10px;
 		vertical-align: middle;
-}
+	}
 	input[type=radio]:checked + label
-{
+	{
 		background: #a29f9f;
 		height: 42px;
 		width: 42px;
@@ -338,29 +324,30 @@ form {
 		border: 1px solid #cfcfcf;
 		margin: 4px 18 4px -10px;
 		vertical-align: middle;
-}
+	}
 	.form-subtitle {
 		display:inline-block;
 		font-size: 18px;
 		font-weight: normal;
-}
+	}
 	.input-text-changes{
 		height: 42px;
 		width: 76px;
 		background-color: #dedede;
-}
+	}
 	.input-text {
-			height: 42px;
-			width: 100%;
-			color: #dedede;
-			vertical-align: middle;
-			padding: 0 10px;
-			background-color: #dedede;
+		height: 42px;
+		width: 100%;
+		vertical-align: middle;
+		padding: 0 10px;
+		background-color: #dedede;
 	}
 	input[type=text]{
 	}
 }
 //End pool_form
+
+//Start header
 .mainpicture{
 	background:url('/images/header_picture.jpg');
 	background-size:cover;
@@ -379,7 +366,7 @@ form {
 .buttons{
 	font-size:0px;
 	@include breakpoint(phablet){
-    font-size: 0px;
+		font-size: 0px;
 	}
 }
 .buttons-social{
@@ -437,6 +424,7 @@ form {
 		margin: 0px;
 	}
 }
+//End of header
 .portfolio_block{
 	padding-top:50px;
 	text-align:center;
@@ -451,11 +439,15 @@ form {
 	}
 }
 .title{
+	margin:25px 0 25px 0;
 	font-weight:bold;
 	text-align:center;
 	color:black;
-	font-size: 41px;
+	font-size: 35px;
 	text-transform:uppercase;
+	@include breakpoint(phablet){
+		font-size:41px;
+  }
 	&_portfolio{
 		color:#fff;
 		font-size: 41px;
@@ -468,12 +460,71 @@ form {
 		color:#f52556;
 	}
 }
-.orders{
-	text-align:center;
-}
 .check_icon{
 	display:inline-block;
 	float: left;
 	background:#a3ec58;
 	padding:15px;
+}
+.label{
+  height:95px;
+  background:blue;
+  margin-bottom:15px;
+  color:#fff;
+  position:relative;
+  padding:10px 10px 10px 105px;
+  &__text{
+    height:100%;
+    display:flex;
+    align-items: center;
+
+  }
+  &__icon{
+     position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:95px;
+    background:rgba(255,255,255,.5);
+    span{
+      position:absolute;
+      height:60px;
+      width:60px;
+      border-radius:50%;
+      border:6px solid #fff;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin:auto;
+      &:before,&:after{
+        content:'';
+        position:absolute;
+        height:6px;
+        width:15px;
+        background:#fff;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        transform: rotate(-45deg) translateX(5px) translateY(4px);
+      }
+      &:before{
+        width:25px;
+        transform: rotate(45deg) translateX(-5px) translateY(5px);
+      }
+    }
+  }
+}
+.label-wrap:nth-child(2n){
+  .label{
+    background:green;
+    padding:10px 105px 10px 10px;
+    &__icon{
+      left:auto;
+      right:0;
+    }
+  }
+  
 }
