@@ -466,9 +466,10 @@ form {
 	background:#a3ec58;
 	padding:15px;
 }
+//label/list
 .label{
   height:95px;
-  background:blue;
+  background:#76c327;
   margin-bottom:15px;
   color:#fff;
   position:relative;
@@ -485,7 +486,7 @@ form {
     top:0;
     bottom:0;
     width:95px;
-    background:rgba(255,255,255,.5);
+    background: #a3ec58;
     span{
       position:absolute;
       height:60px;
@@ -519,12 +520,12 @@ form {
 }
 .label-wrap:nth-child(2n){
   .label{
-    background:green;
+    background:#2e81d9;
     padding:10px 105px 10px 10px;
-    &__icon{
-      left:auto;
-      right:0;
+      &__icon{
+        left:auto;
+        right:0;
+        background:#3d97f5;
+      }
     }
-  }
-  
 }
