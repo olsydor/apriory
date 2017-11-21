@@ -102,6 +102,15 @@
     	font-size:13px;
   	}
 }
+
+#dot_0,#dot_1,#dot_2,#dot_3,#dot_4,#dot_5,{
+	max-height: 100px;
+	overflow: hidden;
+	
+}
+.hide{
+	display: none;
+}
 @include breakpoint(tablet){
     .feature{
         position:relative;
