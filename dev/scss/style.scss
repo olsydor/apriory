@@ -43,8 +43,13 @@ img{
 
 body{
 	font-family: 'Sansation-Regular';
-}
-
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+ 	}
+ img{
+ 	max-width: 100%;
+ }
 // start header top line
 .header{
 	text-align: center;
@@ -128,6 +133,26 @@ body{
 }
 ::-webkit-input-placeholder { /* Chrome */
   color: #c0c0c0;
+}
+.title{
+ text-align:center;
+  text-transform:uppercase;
+  font-size:41px;
+  font-weight:bold;
+  span{
+    color:red;
+  }
+}	
+.input{
+  width: 287px;
+  height: 50px;
+  font-size: 22px;
+  padding-left: 18px;
+  margin-right: 45px;
+  color: #c0c0c0;
+}
+.pool-title{
+	font-size: 10px;
 }	
 //Start cols with advantages
 .advantages{
@@ -536,5 +561,16 @@ form {
       right:0;
     }
   }
-  
+.warranty{
+	// text-align:center;
+	&-list{
+		height:95px;
+	}
+	&-text{
+		float:left;
+		padding: 22px;
+		background:#76c327;
+		color:#fff;
+	}
+}
 }

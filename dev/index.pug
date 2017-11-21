@@ -22,6 +22,7 @@ html
 				img(src="images/apriory_logo.jpg")
 		.mainpicture
 			.buttons(id="butt")
+			.buttons
 				a(href="#").btn.btn-services услуги
 				a(href="#portfolio").btn.btn-portfolio портфолио
 				br
@@ -106,6 +107,7 @@ html
 					.col-phablet-1-4.show-phablet
 					.col-phablet-1-2.col-tablet-1-5
 						a(href="#")
+							img(src="../images/intalk.jpg")
 							img(src="/images/intalk.jpg")
 		.section.services
 			include parts/services.pug
@@ -201,14 +203,13 @@ html
 						.contacts__row
 							.contacts_title Прийом абонетнов
 							.text 9:00 до 17:00, с ПН до ПТ
-		.section_promotion.bottom
-			.wrapper
-				.wrapper_promotion
-					.promotion
-						span Акция!
-					.promo__content
-						span Проект перепланировки в подарок!
-						span * ( при единовременном заказе боле чем на 50 000 р.) 
+		.wrapper
+			.wrapper_promotion
+				.promotion
+					span Акція!
+				.promo__content
+					span Проект перепланировки в подарок!
+					span * ( при единовременном заказе боле чем на 50 000 р.) 
 		.section.section_grey.aplication
 			.wrapper
 				.row.clearfix
@@ -221,4 +222,3 @@ html
 						button.btn.btn-send(type='submit') Оставить заявку
 		script(src="js/code.js")
 		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaO14uZAmmgy_VuPkiwBkDMlMTEtXpz9A&callback=initMap" async defer)
-		

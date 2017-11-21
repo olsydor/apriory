@@ -1,10 +1,22 @@
 node_modules/
 package.json
 *.psd
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+app/
+app/*
+=======
+
+>>>>>>> f5570d7b58bf4c550f4b658bfbaf880b6c1facde
 app/
 app/*
 package-lock.json
+<<<<<<< HEAD
 gulpfile.js
 package.json
 .gitignore
 
+=======
+>>>>>>> d76ac945a04de2715835e1ca5c4b2bfc3155e90f
+>>>>>>> f5570d7b58bf4c550f4b658bfbaf880b6c1facde
