@@ -15,43 +15,36 @@
 
   }
 }
-@font-face {
-			font-family: "MyriadProRegular";
-			src: url("../font/MyriadProRegular/MyriadProRegular.eot");
-			font-style: normal;
-			font-weight: normal;
+	@font-face {
+		font-family: 'Sansation-Bold';
+		src: url('../fonts/sansation-bold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
 	}
 
-  @font-face {
-      font-family: 'Sansation-Bold';
-      src: url('../fonts/sansation-bold.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-
-  }
-
-  @font-face {
-      font-family: 'Sansation-Regular';
-      src: url('../fonts/sansation-regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'Sansation-Regular';
+		src: url('../fonts/sansation-regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
 
 *{
 	font-family: 'Sansation-Regular';
 	margin: 0;
 	padding: 0;
 	border: 0;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; 
     box-sizing: border-box;
- 	}
- img{
- 	max-width: 100%;
- }
-body{
-  font-family: 'Sansation-Regular';
 }
+
+img{
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Sansation-Regular';
+}
+
 // start header top line
 .header{
 	text-align: center;
@@ -105,10 +98,10 @@ body{
 		overflow: hidden;
 		margin-bottom: -12px;
 		padding-bottom:0;
-		// &.bottom{
-		// 	margin-top: 12px;
-		// }
-		
+	}
+	&_orders{
+		padding-top:0;
+		text-align:center;
 	}
 }
 .section_grey{
@@ -116,22 +109,22 @@ body{
 	overflow: hidden;
 }	
 .input{
-  width: 287px;
-  height: 50px;
-  font-size: 22px;
-  padding-left: 18px;
-  margin-right: 45px;
-  color: #c0c0c0;
+	width: 287px;
+	height: 50px;
+	font-size: 22px;
+	padding-left: 18px;
+	margin-right: 45px;
+	color: #c0c0c0;
 }
 .pool_title{
 
 }
 .checkbox input:before {
-  content: '';
-  background: #fff;
-  display: block;
-  width: 10px;
-  height: 10px;
+	content: '';
+	background: #fff;
+	display: block;
+	width: 10px;
+	height: 10px;
 }
 ::-webkit-input-placeholder { /* Chrome */
   color: #c0c0c0;
@@ -201,13 +194,13 @@ body{
 @media (min-width:600px){
 	.years{
 		span:first-child{
-		font-size:100.8px;
+			font-size:100.8px;
 		}
 		span:nth-child(2) {
-    position: absolute;
-    top: 55%;
-    right: -56%;
-  	}
+			position: absolute;
+			top: 55%;
+    		right: -56%;
+  		}
 	}
 	.advantages-title-num{
 		font-size:70.2px;
@@ -290,72 +283,81 @@ input{
 //Start pool_form
 form {
 	text-transform: uppercase;
-	text-align: justify;
+	vertical-align: middle;
 	
 	input[type=radio] {
 		display:none;
-}
+	}
 	.form-title{
 		font-size: 19px;
 		font-weight: bold;
 		margin-top: 30px;
+		margin-right: 20px;
 	}
 	//Line
 	.form-title:after,{
-	    display: inline-block;
-	    margin: 16px 0 16px 0;
-	    height: 1px;
-	    content: " ";
-	    text-shadow: none;
-	    background-color: #d0d0d0;
-	    width: 100%;
-}
+		display: inline-block;
+		margin: 16px 0 16px 0;
+		height: 1px;
+		content: " ";
+		text-shadow: none;
+		background-color: #d0d0d0;
+		width: 100%;
+	}
 	input[type=radio] + label
-{
+	{
 		background: #dedede;
 		height: 42px;
 		width: 42px;
 		display:inline-block;
 		padding: 0 0 0 0px;
 		border: 1px solid #cfcfcf;
-		margin: 4px 18 4px -10px;
+		margin: 4px 18 4px 10px;
 		vertical-align: middle;
-}
+	}
 	input[type=radio]:checked + label
-{
+	{
 		background: #a29f9f;
 		height: 42px;
 		width: 42px;
 		display:inline-block;
 		padding: 0 0 0 0px;
 		border: 1px solid #cfcfcf;
-		margin: 4px 18 4px -10px;
+		margin: 4px 18 4px 10px;
 		vertical-align: middle;
 }
-	input[type=radio] + span {
-  		color: #78a025;
-}
+	label span {
+		margin-left: 50px;
+		display:inline-block;
+		font-size: 18px;
+		font-weight: normal;
+		vertical-align: middle;
+
+	}
+	//label[for="house"]:before {
+  	//	content: ''; 
+//}
+	
 	.form-subtitle {
 		display:inline-block;
 		font-size: 18px;
 		font-weight: normal;
-}
+	}
 	.input-text-changes{
 		height: 42px;
 		width: 76px;
 		background-color: #dedede;
-}
+	}
 	.input-text {
-			height: 42px;
-			width: 100%;
-			vertical-align: middle;
-			padding: 0 10px;
-			background-color: #dedede;
-	}
-	input[type=text]{
-	}
+		height: 42px;
+		width: 100%;
+		vertical-align: middle;
+		padding: 0 10px;
+		background-color: #dedede;
+}
 }
 //End pool_form
+//Start header
 .mainpicture{
 	background:url('/images/header_picture.jpg');
 	background-size:cover;
@@ -374,7 +376,7 @@ form {
 .buttons{
 	font-size:0px;
 	@include breakpoint(phablet){
-    font-size: 0px;
+		font-size: 0px;
 	}
 }
 .buttons-social{
@@ -432,6 +434,7 @@ form {
 		margin: 0px;
 	}
 }
+//End of header
 .portfolio_block{
 	padding-top:50px;
 	text-align:center;
@@ -466,10 +469,6 @@ form {
 	span:nth-child(2){
 		color:#f52556;
 	}
-}
-
-.orders{
-	text-align:center;
 }
 .check_icon{
 	display:inline-block;

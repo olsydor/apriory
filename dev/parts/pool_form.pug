@@ -5,18 +5,18 @@ html
 		form
 			.row.clearfix
 				.form-title Тип вашего обьекта<br>
-				.col-phablet-1-3
-					input(type="radio" name="type-object" value="house" id="house")
-					label(for="house" class="form-inline") 
-					span Жылой дом
-				.col-phablet-1-3
+				.col-phablet-1-2.col-phablet-1-3
+					input(type="radio" name="type-object" value="house" id="house") 
+					label(for="house") 
+						span| Жылой дом
+				.col-phablet-1-2.col-phablet-1-3
 					input(type="radio" name="type-object" value="public-build" id="public-build")
-					label(for="public-build" class="form-inline")
-					.form-subtitle Общественное здание
-				.col-phablet-1-3
+					label(for="public-build" class="type-object")
+						span Общественное здание
+				.col-phablet-1-2.col-phablet-1-3
 					input(type="radio" name="type-object" value="construcrion" id="construcrion")
 					label(for="construcrion" class="form-inline")
-					.form-subtitle  Сооружение
+						span Сооружение
 			.row.clearfix
 				.form-title Параметры<br>
 				.col-phablet-1-3
@@ -36,11 +36,11 @@ html
 				.col-phablet-1-3
 					input(type="radio" name="design-parameters" value="new-construction" id="new-construction")
 					label(for="new-construction" class="form-inline")
-					.form-subtitle Новое строительство
+						span Новое строительство
 				.col-phablet-1-3
 					input(type="radio" name="design-parameters" value="" id="reconstruction")
 					label(for="reconstruction" class="form-inline")
-					.form-subtitle Реконструкция
+						span Реконструкция
 				.col-phablet-1-3
 					.form-subtitle Иное
 					label(class="form-inline")
