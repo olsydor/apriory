@@ -281,12 +281,18 @@ body{
 	vertical-align:middle;
 }
 input{
-		width:100%;
+	width:100%;
+	margin-right:20px;
+	border: 1px solid #cfcfcf;
+	font-size:22px;
+	padding:15px 51px 10px 15px;
+	@media (max-width: 900px) and (min-width: 800px){
+		margin-top:18px;
+	}
+	@media (min-width: 901px){
 		margin-top:7px;
-		margin-right:20px;
-		border: 1px solid #cfcfcf;
-		font-size:22px;
-		padding:15px 51px 10px 15px;
+	}
+	
 }
 //Start pool_form
 form {
@@ -424,6 +430,13 @@ form {
 		}
 	}
 }
+
+//@media (max-width: 680px) and (min-width: 600px){
+//	input{
+//		margin-top:18px;
+//	}
+//		
+//}
 @media (min-width:800px){
 	.btn-send{
 		margin-left: auto;

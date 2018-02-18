@@ -15,6 +15,7 @@ $(document).ready(function(){
 	var $dot_0 = $('#dot_0').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -27,6 +28,7 @@ $(document).ready(function(){
 	var $dot_1 = $('#dot_1').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -39,6 +41,7 @@ $(document).ready(function(){
 	var $dot_2 = $('#dot_2').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -51,6 +54,7 @@ $(document).ready(function(){
 	var $dot_3 = $('#dot_3').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -63,6 +67,7 @@ $(document).ready(function(){
 	var $dot_4 = $('#dot_4').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -75,6 +80,7 @@ $(document).ready(function(){
 	var $dot_5 = $('#dot_5').dotdotdot({
 		ellipsis: "\u2026 ",
 		keep: '.readmore',
+		height: 100,
 		callback: function( isTruncated ) {
 			var self =$(this)
 			if (isTruncated) {
@@ -192,7 +198,8 @@ $(document).ready(function(){
 				api_5.watch();
 			}
 		});
-  
+  	
+
 
 });
 
